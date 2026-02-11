@@ -6,9 +6,18 @@ import ProjectList from './ProjectList';
 import Contact from './Contact';
 import Footer from './Footer';
 import { Routes, Route } from 'react-router-dom';
-import ProjectDetail from './ProjectDetail';
+import projectRoutes from '../routes/projectRoutes';
+import React from "react";
+import Maintenance from "./Maintenance";
+
+const isMaintenance = process.env.REACT_APP_MAINTENANCE === "true";
+console.log('REACT_APP_MAINTENANCE =', process.env.REACT_APP_MAINTENANCE);
 
 function App() {
+  if (isMaintenance) {
+    return <Maintenance />;
+  }
+
   return (
     <div className="App">
       <Header />
@@ -21,7 +30,9 @@ function App() {
               <Contact />
             </>
           } />
-          <Route path="/projekt/:id" element={<ProjectDetail />} />
+          {projectRoutes.map(({ path, element }, idx) => (
+            <Route key={idx} path={path} element={element} />
+          ))}
         </Routes>
       </main>
       <Footer />

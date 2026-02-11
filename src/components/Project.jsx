@@ -2,11 +2,12 @@ import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
-const Project = ({ title, description, link }) => (
+
+const Project = ({ title, description, link, id }) => (
   <div className="project">
     <h3>{title}</h3>
     <p>{description}</p>
-    <Link to={link}>Mehr erfahren</Link>
+    <Link to={link || `/projekt/${id}`}>Mehr erfahren</Link>
   </div>
 );
 

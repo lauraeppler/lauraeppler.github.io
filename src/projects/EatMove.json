@@ -1,0 +1,9 @@
+{
+  "id": "eatmove",
+  "title": "EatMove",
+  "description": "Kurze Beschreibung deines vierten Projekts.",
+  "details": "Ausführliche Informationen zu Projekt 4. Hier kannst du alles beschreiben, was wichtig ist.",
+  "images": ["bild7.jpg", "bild8.jpg"],
+  "link": "/projekt/EatMove"
+
+}

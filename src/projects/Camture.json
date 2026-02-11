@@ -1,0 +1,9 @@
+{
+  "id": "camture",
+  "title": "Camture",
+  "description": "Kurze Beschreibung deines fünften Projekts.",
+  "details": "Ausführliche Informationen zu Projekt 5. Hier kannst du alles beschreiben, was wichtig ist.",
+  "images": ["bild9.jpg", "bild10.jpg"],
+  "link": "/projekt/Camture"
+
+}

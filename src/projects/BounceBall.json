@@ -1,0 +1,9 @@
+{
+  "id": "bounceball",
+  "title": "Bounce Ball",
+  "description": "Kurze Beschreibung deines ersten Projekts.",
+  "details": "Ausführliche Informationen zu Projekt 1. Hier kannst du alles beschreiben, was wichtig ist.",
+  "images": ["bild1.jpg", "bild2.jpg"],
+  "link": "/projekt/BounceBall"
+
+}

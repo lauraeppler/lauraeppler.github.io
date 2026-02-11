@@ -1,18 +1,10 @@
-const projects = [
-  {
-    id: "1",
-    title: "Projekt 1",
-    description: "Kurze Beschreibung deines ersten Projekts.",
-    details: "Ausführliche Informationen zu Projekt 1. Hier kannst du alles beschreiben, was wichtig ist.",
-    link: "/projekt/1"
-  },
-  {
-    id: "2",
-    title: "Projekt 2",
-    description: "Kurze Beschreibung deines zweiten Projekts.",
-    details: "Ausführliche Informationen zu Projekt 2. Hier kannst du alles beschreiben, was wichtig ist.",
-    link: "/projekt/2"
-  }
-];
+import Shuffle from '../projects/Shuffle.json';
+import LocalMessenger from '../projects/LocalMessenger.json';
+import FourWays from '../projects/FourWays.json';
+import Climex from '../projects/Climex.json';
+import Camture from '../projects/Camture.json';
+import BounceBall from '../projects/BounceBall.json';
+import EatMove from '../projects/EatMove.json';
 
+const projects = [Shuffle, LocalMessenger, FourWays, Climex, Camture, BounceBall, EatMove];
 export default projects;
