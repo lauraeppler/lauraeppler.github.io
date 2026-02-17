@@ -1,8 +1,9 @@
 import React from "react";
+import ClimexData from '../projects/Climex.js';
 
 const Climex = () => (
   <section className="project-detail">
-    <h1>Climex</h1>
+    <h1>{ClimexData.title}</h1>
 
     <div>
       <h2>Projektübersicht</h2>

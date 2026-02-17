@@ -1,9 +1,0 @@
-{
-  "id": "localmessenger",
-  "title": "Local Messenger",
-  "description": "Kurze Beschreibung deines zweiten Projekts.",
-  "details": "Ausführliche Informationen zu Projekt 2. Hier kannst du alles beschreiben, was wichtig ist.",
-  "images": ["bild3.jpg", "bild4.jpg"],
-  "link": "/projekt/LocalMessenger"
-
-}

@@ -3,8 +3,15 @@ import "../App.css";
 import { Link } from "react-router-dom";
 
 
-const Project = ({ title, description, link, id }) => (
+const Project = ({ title, description, link, id, tags }) => (
   <div className="project">
+    {tags && tags.length > 0 && (
+      <div className="tags">
+        {tags.map((tag, index) => (
+          <span key={index} className="tag">{tag}</span>
+        ))}
+      </div>
+    )}
     <h3>{title}</h3>
     <p>{description}</p>
     <Link to={link || `/projekt/${id}`}>Mehr erfahren</Link>

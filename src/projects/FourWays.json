@@ -1,9 +1,0 @@
-{
-  "id": "fourways",
-  "title": "Four Ways",
-  "description": "Kurze Beschreibung deines dritten Projekts.",
-  "details": "Ausführliche Informationen zu Projekt 3. Hier kannst du alles beschreiben, was wichtig ist.",
-  "images": ["bild5.jpg", "bild6.jpg"],
-  "link": "/projekt/FourWays"
-
-}
