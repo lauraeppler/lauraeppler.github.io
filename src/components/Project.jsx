@@ -14,7 +14,7 @@ const Project = ({ title, description, link, id, tags }) => (
     )}
     <h3>{title}</h3>
     <p>{description}</p>
-    <Link to={link || `/projekt/${id}`}>Mehr erfahren</Link>
+    <Link to={`projekt/${id}`}>Mehr erfahren</Link>
   </div>
 );
 

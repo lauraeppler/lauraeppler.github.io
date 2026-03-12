@@ -1,18 +1,18 @@
 import useFetch from "./hooks/useFetch";
 
-export const useFetchProjectContent = () => {
+export const useFetchProjectContent = (id) => {
   const BounceBallData = {
   "id": "bounceball",
-  "title": "Bounce Ball",
+  "title": "Bounce Ball - Neon Party Arcade",
   "description": "Kurze Beschreibung deines ersten Projekts.",
   "details": "Ausführliche Informationen zu Projekt 1. Hier kannst du alles beschreiben, was wichtig ist.",
-  "context": "Interdisziplinäres Studienprojekt im Rahmen des Moduls \"Game Design\" an der Hochschule der Medien Stuttgart",
-  "period": "Sommersemester 2022 - Wintersemester 2022/2023",
-  "role": "UX/UI Design, Partikeleffekte",
-  "tools": "Adobe Illustrator, Unity",
+  "context": "Interdisziplinäres Studienprojekt im Rahmen des Moduls \"Game Praktikum\" an der Hochschule der Medien Stuttgart",
+  "period": "Wintersemester 2021/2022 - Sommersemester 2022",
+  "role": "Team Graphics - UX/UI Design, Icon Design, Asset Design, Partikeleffekte",
+  "tools": "Adobe Illustrator, Unity, Confluence, Jira, Codecks ",
   "images": ["bild1.jpg", "bild2.jpg"],
   "link": "/projekt/BounceBall",
-  "tags": ["Spielentwicklung", "JavaScript"],
+  "tags": ["UX/UI Design", "Game", "Studienprojekt"],
   "sections": [
     {
       title: "Projektziel",
@@ -68,7 +68,7 @@ const ClimexData = {
   "tools": "",
   "images": ["bild3.jpg", "bild4.jpg"],
   "link": "/projekt/Climex",
-  "tags": ["Umwelt", "Datenvisualisierung"],
+  "tags": ["UX/UI Design", "Informationsarchitektur", "Mobile App", "Studienprojekt"],
   "sections": [
     {
       title: "Projektziel",
@@ -87,16 +87,16 @@ const ClimexData = {
 
 const EatMoveData = {
   "id": "eatmove",
-  "title": "EatMove",
-  "description": "Kurze Beschreibung deines vierten Projekts.",
+  "title": "Eat&Move",
+  "description": "Eine mobile Anwendung, die Rezepte und Workouts in einem System vereint.",
   "details": "Ausführliche Informationen zu Projekt 4. Hier kannst du alles beschreiben, was wichtig ist.",
-  "context": "",
-  "role": "",
-  "period": "??",
-  "tools": "",
+  "context": "Semesterprojekt im Studienfach \"Mobile Medien\" an der Hochschule der Medien Stuttgart",
+  "role": "UX/UI Design, Informationsarchitektur, Prototyping",
+  "period": "Wintersemester 2020 (3. Semester)",
+  "tools": "Balsamiq, Adobe XD",
   "images": ["bild7.jpg", "bild8.jpg"],
   "link": "/projekt/EatMove",
-  "tags": ["Gesundheit", "App-Entwicklung"],
+  "tags": ["UX/UI Design", "Mobile App", "Studienprojekt"],
   "sections": [
     {
       title: "Projektziel",
@@ -115,16 +115,16 @@ const EatMoveData = {
 
 const FourWaysData = {
   "id": "fourways",
-  "title": "Four Ways",
-  "description": "Kurze Beschreibung deines dritten Projekts.",
-  "details": "Ausführliche Informationen zu Projekt 3. Hier kannst du alles beschreiben, was wichtig ist.",
-  "context": "",
-  "role": "",
+  "title": "FourWays - Smarthome App",
+  "description": "Eine blickbasierte Smarthome-App für Menschen mit Bewegungseinschränkungen",
+  "details": "",
+  "context": "BMBF-Forschungsprojekt in Kooperation mit dem Startup Treye Tech",
   "period": "??",
-  "tools": "",
+  "role": "Icon Design",
+  "tools": "Adobe Illustrator",
   "images": ["bild5.jpg", "bild6.jpg"],
   "link": "/projekt/FourWays",
-  "tags": ["UX/UI Design", "Interaktives Design"],
+  "tags": ["Icon Design", "Mobile App"],
   "sections": [
     {
       title: "Projektziel",
@@ -135,8 +135,16 @@ const FourWaysData = {
       content: useFetch("/content/fourways/meine-rolle.md")
     },
     {
-      title: "Projektstruktur",
-      content: useFetch("/content/fourways/projektstruktur.md")
+      title: "Designprinzipien",
+      content: useFetch("/content/fourways/designansatz.md")
+    },
+    {
+      title: "Icon-Set",
+      content: useFetch("/content/fourways/projektergebnisse.md")
+    },
+    {
+      title: "Impact",
+      content: useFetch("/content/fourways/impact.md")
     },
   ]
 };
@@ -144,15 +152,15 @@ const FourWaysData = {
 const LocalMessengerData = {
   "id": "localmessenger",
   "title": "Local Messenger",
-  "description": "Kurze Beschreibung deines zweiten Projekts.",
-  "details": "Ausführliche Informationen zu Projekt 2. Hier kannst du alles beschreiben, was wichtig ist.",
-  "context": "",
-  "role": "",
+  "description": "Eine App zur Unterstützungsvermittlung in ambulanten Wohnformen",
+  "details": "Der Local Messenger ist eine App, die eine einfache und schnelle Kommunikation zwischen Klienten und Assistierenden der ambulanten Betreuung und Pflege ermöglicht. Dabei können Menschen mit Unterstützungsbedarf Dienstleistungswünsche und -bedarfe digital an ihre Assistenten äußern.",
+  "context": "Forschungsprojekt in Kooperation mit der Diakonie Kork",
+  "role": "UX/UI Design, Interaktionslogik, Prototyping",
   "period": "??",
-  "tools": "",
+  "tools": "Adobe XD",
   "images": ["bild3.jpg", "bild4.jpg"],
   "link": "/projekt/LocalMessenger",
-  "tags": ["Webentwicklung", "JavaScript", "Kommunikation"],
+  "tags": ["UX/UI Design", "Ambulante Pflege", "Mobile App"],
   "sections": [
     {
       title: "Projektziel",
@@ -172,14 +180,14 @@ const LocalMessengerData = {
 const ShuffleData = {
   "id": "shuffle",
   "title": "SHUFFLE - Knowledge Badge \"Barrierefrei lehren\"",
-  "description": "Ein Qualifizierungsangebot für Lehrpersonen zur digitalen Barrierefreiheit in der Lehre",
+  "description": "Ein Qualifizierungsangebot zur digitalen Barrierefreiheit in der Lehre",
   "details": "Das Knowledge Badge „Barrierefrei lehren“ ist ein öffentlich zugänglicher Weiterbildungskurs zur digitalen Barrierefreiheit in der Hochschullehre mit optionaler Qualifizierungsprüfung.",
-  "context": "Forschungsprojekt SHUFFLE in Kooperation mit der Universität Hamburg",
+  "context": "Forschungsprojekt SHUFFLE in Kooperation mit IAAP D-A-CH",
   "role": "Konzeption, Kurs- & Prüfungsentwicklung, Projektleitung & Koordination, Evaluation",
   "period": "??",
   "images": ["bild1.jpg", "bild2.jpg"],
   "link": "/projekt/SHUFFLE",
-  "tags": ["Digitale Barrierefreiheit", "Bildung", "Onlinekurs", "Projektleitung"],
+  "tags": ["Barrierefreiheit in der Bildung", "Lernkurs", "Prüfungsmodell", "Projektleitung"],
   "sections": [
     {
       title: "Projektziel",
@@ -198,5 +206,8 @@ const ShuffleData = {
 
   const projectsData = [ShuffleData, LocalMessengerData, FourWaysData, ClimexData, CamtureData, BounceBallData, EatMoveData];
 
-  return projectsData
+  if(id) {
+    return projectsData.find(project => project.id === id);
+  }
+  return projectsData;
 }

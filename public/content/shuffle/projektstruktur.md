@@ -1,13 +1,4 @@
-### Lernkurs
-
-Als optimale Vorbereitung auf die Prüfung eignet sich der kostenlose Lernkurs zum Knowledge Badge. Dieser wurde im Rahmen vom Forschungsprojekt SHUFFLE (www.shuffle-projekt.de) entwickelt und ist öffentlich zugänglich. Der Kurs besteht aus vier praxisorientierten Modulen, die auch die Grundlage für die Prüfung bilden: (1) Grundlagen, (2) Vielfalt der Nutzendenbedürfnisse, (3) Barrierefreiheit im Hochschulkontext und (4) Tooling Dokumente. Nach erfolgreicher Anmeldung auf der Moodle-Plattform können Sie sofort starten und in Ihrem eigenen Tempo lernen.
-
-* Modularer Aufbau
-* Praxisorientierte Inhalte
-* Selbstgesteuertes Lernen
-
-### Prüfungsmodell
-
-* Kompetenzbasiertes Prüfungsformat
-* Standardisierter Ablauf</li>
-* Zertifizierung über IAAP D-A-CH
+* [Bachelorarbeit](https://hdms.bsz-bw.de/frontdoor/index/index/start/0/rows/10/sortfield/score/sortorder/desc/searchtype/simple/query/laura+eppler/docId/7027)
+* [SHUFFLE Projektergebnis](https://shuffle-projekt.de/lernkurs-knowledge-badge/)
+* [Lernkurs](https://mooc.hdm-stuttgart.de/course/view.php?id=43)
+* [IAAP D-A-CH Prüfung](https://iaap-dach.org/knowledge-badges/barrierefrei-lehren.html)
