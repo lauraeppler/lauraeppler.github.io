@@ -1,6 +1,4 @@
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import Maintenance from "./components/Maintenance";
 import { RouterProvider } from 'react-router-dom';
 import { router } from './router';
@@ -15,11 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <main>
-        <RouterProvider router={router} />
-      </main>
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const Project = ({ title, description, link, id, tags }) => (
-  <div className="project">
+  <div className="project" id="projects">
     {tags && tags.length > 0 && (
       <div className="tags">
         {tags.map((tag, index) => (

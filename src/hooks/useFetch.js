@@ -7,7 +7,7 @@ export default function useFetch(path) {
     fetch(path)
       .then(res => res.text())
       .then(setContent);
-  }, []);
+  }, [path]);
 
   return content
 }
