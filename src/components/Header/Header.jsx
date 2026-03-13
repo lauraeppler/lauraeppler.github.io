@@ -6,10 +6,20 @@ const Header = () => {
   return (
     <header className="main-header">
       <nav aria-label="Hauptnavigation">
-        <Link to={{pathname: HOME, hash: '#about'}}>Über mich</Link>
-        <Link to={{pathname: HOME, hash: '#projects'}}>Projekte</Link>
-        <Link to={{pathname: HOME, hash: '#contact'}}>Kontakt</Link>
-        <Link to={{pathname: HOME, hash: ''}}>Lebenslauf (PDF)</Link>
+        <ul>
+          <li>
+            <Link to={{pathname: HOME, hash: '#about'}}>Über mich</Link>
+          </li>
+          <li>
+            <Link to={{pathname: HOME, hash: '#projects'}}>Projekte</Link>
+          </li>
+          <li>
+            <Link to={{pathname: HOME, hash: '#contact'}}>Kontakt</Link>
+          </li>
+          <li className="lebenslauf-link">
+            <Link to={{pathname: HOME, hash: ''}}>Lebenslauf (PDF)</Link>
+          </li>
+        </ul>
       </nav>
     </header>
   )

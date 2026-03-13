@@ -12,62 +12,100 @@
 }
 
 .main-header nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  min-height: 74px;
-  padding: 0 28px;
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: 74px;
+    padding: 0 28px;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    color: #5f6687;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -26px;
+      width: 0px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 999px;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: 300ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    &:hover {
+      color: var(--primary-dark);
+
+      &::after {
+        opacity: 1;
+        width: 56px;
+      }
+    }
+
+    &.lebenslauf-link {
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #6f7cf6 0%, #5e6ef0 100%);
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      box-shadow: 0 10px 24px rgba(84, 101, 234, 0.22);
+
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 
-.main-header nav a {
-  position: relative;
-  color: #5f6687;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.2s ease;
+@media (max-width: 900px) {
+  .main-header {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .main-header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px 22px;
+  }
+
+  .main-header nav li.lebenslauf-link {
+    position: static;
+    margin-top: 4px;
+    
+  }
 }
 
-.main-header nav a:hover {
-  color: var(--primary-dark);
-}
+@media (max-width: 478px) {
+   .main-header {
+    padding-bottom: 10px;
+  }
 
-.main-header nav a[href="#projects"] {
-  color: var(--text);
-  font-weight: 600;
-}
-
-.main-header nav a[href="#projects"]::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -26px;
-  width: 56px;
-  height: 4px;
-  background: var(--primary);
-  border-radius: 999px;
-  transform: translateX(-50%);
-}
-
-.main-header nav a:last-child {
-  position: absolute;
-  right: 20px;
-  top: 14px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: 0 18px;
-  border-radius: 12px;
-  background: linear-gradient(180deg, #6f7cf6 0%, #5e6ef0 100%);
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 600;
-  box-shadow: 0 10px 24px rgba(84, 101, 234, 0.22);
-}
-
-.main-header nav a:last-child::after {
-  display: none;
+  .main-header nav li.lebenslauf-link {
+    width: 100%;
+    order: -1;
+  }
 }

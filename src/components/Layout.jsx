@@ -7,7 +7,7 @@ function Layout() {
   useSmoothScrolling();
 
   return (
-    <div className="Layout">
+    <div className="layout">
       <Header />
       <main>
         <Outlet />
