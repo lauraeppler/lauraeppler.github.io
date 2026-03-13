@@ -27,16 +27,6 @@ const ProjectDetail = () => {
   return (
     <section className={`project-detail ${project.id}`}>
       <Hero project={project} />
-      <nav className="content-navigation" aria-label="Inhaltsverzeichnis">
-        <h2>Zum Inhalt springen:</h2>
-        <ul>
-          <li><a href="#ziel">Projektziel</a></li>
-          <li><a href="#rolle">Meine Rolle</a></li>
-          <li><a href="#ergebnisse">Projektstruktur</a></li>
-        </ul>
-      </nav>
-
-
       {project.sections.map((section, index) => 
         <MarkdownSection key={`${section.title}_${index}`} section={section} />
       )}
