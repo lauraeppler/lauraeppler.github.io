@@ -1,5 +1,5 @@
 .content-section {
-  padding: 72px 48px;
+  padding: 72px 0;
   background: var(--surface);
 
   &:first-of-type {

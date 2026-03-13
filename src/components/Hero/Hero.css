@@ -1,26 +1,19 @@
 .hero-section {
-  position: relative;
-  min-height: 360px;
-  background: none;
-  overflow: visible;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 100px;
-  padding: 64px 140px 100px;
-  margin-bottom: 32px;
+  grid-column: fullwidth;
+  grid-template-columns: subgrid;
+  padding: 64px 0 100px;
+  background: linear-gradient(110deg, #7e9dff 0%, #6f72f3 38%, #9a63e6 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(110deg, #7e9dff 0%, #6f72f3 38%, #9a63e6 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-    z-index: 0;
+  .hero-wrapper {
+    grid-column: xlwrapper;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2vw;
   }
 
   .project-hero {
-    position: relative;
-    z-index: 1;
     color: #ffffff;
     text-align: left;
 
@@ -35,7 +28,6 @@
     }
 
     .project-subtitle {
-      max-width: 70%;
       font-size: clamp(1rem, 1.2vw, 1.2rem);
       line-height: 1.65;
       color: rgba(255, 255, 255, 0.88);

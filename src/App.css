@@ -47,6 +47,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+section {
+  display: grid;
+  grid-column: wrapper;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -62,6 +67,7 @@ a {
 
 /* About-Bereich */
 #about {
+  grid-column: fullwidth;
   position: relative;
   padding: 64px 48px 170px;
   background:
@@ -104,6 +110,7 @@ a {
 
 /* Projekte */
 .projects {
+  grid-column: xlwrapper;
   padding: 56px 48px 48px;
   background: var(--surface);
 }
@@ -201,6 +208,7 @@ a {
 
 /* Footer */
 .footer {
+  grid-column: wrapper;
   padding: 24px 32px;
   background: rgba(255, 255, 255, 0.96);
   border-top: 1px solid rgba(120, 127, 182, 0.12);

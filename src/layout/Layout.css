@@ -1,9 +1,23 @@
 .layout {
+  --padding: minmax(28px, 1fr);
+  --wrapper-width: clamp(0px, 100vw, 680px);
+  --xl-wrapper: minmax(0, 180px);
+  /* xl-wrapper width = 2 * xl-wrapper + wrapper-width */
+
   display: grid;
   height: 100dvh;
+  grid-template-columns: 
+    [fullwidth-start] var(--padding)
+    [xlwrapper-start] var(--xl-wrapper) 
+    [wrapper-start] var(--wrapper-width) 
+    [wrapper-end] var(--xl-wrapper) 
+    [xlwrapper-end] var(--padding)
+    [fullwidth-end];
   grid-template-rows: auto 1fr;
 
   main {
-    overflow-y: auto;
+    display: grid;
+    grid-column: fullwidth;
+    grid-template-columns: subgrid;
   }
 }

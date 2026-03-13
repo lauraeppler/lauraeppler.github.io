@@ -1,5 +1,5 @@
 .main-header {
-  position: relative;
+  grid-column: xlwrapper;
   margin: 0;
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid rgba(120, 127, 182, 0.12);
@@ -11,13 +11,11 @@
   }
 
   ul {
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 40px;
     min-height: 74px;
-    padding: 0 28px;
     list-style: none;
   }
 
@@ -52,9 +50,6 @@
     }
 
     &.lebenslauf-link {
-      position: absolute;
-      right: 20px;
-      top: 14px;
       display: inline-flex;
       align-items: center;
       justify-content: center;

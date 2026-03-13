@@ -1,19 +1,5 @@
 .project-detail {
-  position: relative;
   background: var(--surface);
-  overflow: hidden;
-  border-radius: 0;
-  border: 0;
-  box-shadow: none;
-
-  /* Navigation ausblenden */
-  .content-navigation {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  .project-detail {
-    border-radius: 0;
-  }
+  grid-column: fullwidth;
+  grid-template-columns: subgrid;
 }
