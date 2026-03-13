@@ -1,9 +1,9 @@
-import Markdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import { useFetchProjectContent } from "../../projectData";
 import { useState, useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import './ProjectDetail.css';
+import MarkdownSection from "../../components/MarkdownSection/MarkdownSection";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -37,16 +37,9 @@ const ProjectDetail = () => {
       </nav>
 
 
-      {project.sections.map((section, index) => {
-          return (
-          <section key={`${section.id}-${index}`} id={section.id} className="content-section">
-            {section.title && <h2>{section.title}</h2>}
-              <div className="project-content">
-                <Markdown>{section.content}</Markdown>
-              </div>
-          </section>
-          )
-      })}
+      {project.sections.map((section, index) => 
+        <MarkdownSection key={`${section.title}_${index}`} section={section} />
+      )}
   </section>
   )
 };
