@@ -37,9 +37,9 @@ const ProjectDetail = () => {
       </nav>
 
 
-      {project.sections.map((section) => {
+      {project.sections.map((section, index) => {
           return (
-          <section id={section.id} className="content-section">
+          <section key={`${section.id}-${index}`} id={section.id} className="content-section">
             {section.title && <h2>{section.title}</h2>}
               <div className="project-content">
                 <Markdown>{section.content}</Markdown>
