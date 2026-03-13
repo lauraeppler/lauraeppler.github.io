@@ -117,7 +117,7 @@ const FourWaysData = {
   "id": "fourways",
   "title": "FourWays - Smarthome App",
   "description": "Eine blickbasierte Smarthome-App für Menschen mit Bewegungseinschränkungen",
-  "details": "",
+  "details": "Eine blickbasierte Smarthome-App zur Steuerung des Wohnumfelds für Menschen mit motorischen Einschränkungen",
   "context": "BMBF-Forschungsprojekt in Kooperation mit dem Startup Treye Tech",
   "period": "??",
   "role": "Icon Design",
@@ -153,7 +153,7 @@ const LocalMessengerData = {
   "id": "localmessenger",
   "title": "Local Messenger",
   "description": "Eine App zur Unterstützungsvermittlung in ambulanten Wohnformen",
-  "details": "Der Local Messenger ist eine App, die eine einfache und schnelle Kommunikation zwischen Klienten und Assistierenden der ambulanten Betreuung und Pflege ermöglicht. Dabei können Menschen mit Unterstützungsbedarf Dienstleistungswünsche und -bedarfe digital an ihre Assistenten äußern.",
+  "details": "Eine App zur schnellen und einfachen Kommunikation zwischen Menschen mit Unterstützungsbedarf und Assistierenden der ambulanten Betreuung und Pflege",
   "context": "Forschungsprojekt in Kooperation mit der Diakonie Kork",
   "role": "UX/UI Design, Interaktionslogik, Prototyping",
   "period": "??",
@@ -167,12 +167,12 @@ const LocalMessengerData = {
       content: useFetch("/content/localmessenger/projektziel.md")
     },
     {
-      title: "Meine Rolle",
+      title: "Mein Beitrag",
       content: useFetch("/content/localmessenger/meine-rolle.md")
     },
     {
-      title: "Projektstruktur",
-      content: useFetch("/content/localmessenger/projektstruktur.md")
+      title: "Ergebnisse",
+      content: useFetch("/content/localmessenger/ergebnisse.md")
     },
   ]
 };
@@ -181,24 +181,24 @@ const ShuffleData = {
   "id": "shuffle",
   "title": "SHUFFLE - Knowledge Badge \"Barrierefrei lehren\"",
   "description": "Ein Qualifizierungsangebot zur digitalen Barrierefreiheit in der Lehre",
-  "details": "Das Knowledge Badge „Barrierefrei lehren“ ist ein öffentlich zugänglicher Weiterbildungskurs zur digitalen Barrierefreiheit in der Hochschullehre mit optionaler Qualifizierungsprüfung.",
+  "details": "Ein Weiterbildungsangebot zur digitalen Barrierefreiheit in der Hochschullehre mit öffentlich zugänglichem Onlinekurs und optionaler Qualifizierungsprüfung.",
   "context": "Forschungsprojekt SHUFFLE in Kooperation mit IAAP D-A-CH",
-  "role": "Konzeption, Kurs- & Prüfungsentwicklung, Projektleitung & Koordination, Evaluation",
+  "role": "Konzeption, Kurs- & Prüfungsentwicklung, Projektleitung, Prüfungskoordination, Evaluation",
   "period": "??",
   "images": ["bild1.jpg", "bild2.jpg"],
   "link": "/projekt/SHUFFLE",
-  "tags": ["Barrierefreiheit in der Bildung", "Lernkurs", "Prüfungsmodell", "Projektleitung"],
+  "tags": ["Barrierefreiheit in der Bildung", "Weiterbildungsangebot", "Projektleitung"],
   "sections": [
     {
       title: "Projektziel",
       content: useFetch("/content/shuffle/projektziel.md")
     },
     {
-      title: "Meine Rolle",
+      title: "Mein Beitrag",
       content: useFetch("/content/shuffle/meine-rolle.md")
     },
     {
-      title: "Projektstruktur",
+      title: "Ergebnisse",
       content: useFetch("/content/shuffle/projektstruktur.md")
     },
   ]
