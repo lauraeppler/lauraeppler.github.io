@@ -2,6 +2,7 @@ import Markdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import { useFetchProjectContent } from "../../projectData";
 import { useState, useEffect } from "react";
+import './ProjectDetail.css';
 
 const ProjectDetail = () => {
   const { id } = useParams();
