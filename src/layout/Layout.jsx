@@ -1,7 +1,8 @@
-import Header from './Header/Header';
-import Footer from './Footer';
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
 import useSmoothScrolling from '../hooks/useSmoothScrolling';
+import './Layout.css';
 
 function Layout() {
   useSmoothScrolling();
@@ -11,8 +12,8 @@ function Layout() {
       <Header />
       <main>
         <Outlet />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }

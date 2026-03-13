@@ -1,0 +1,9 @@
+.layout {
+  display: grid;
+  height: 100dvh;
+  grid-template-rows: auto 1fr;
+
+  main {
+    overflow: scroll;
+  }
+}
