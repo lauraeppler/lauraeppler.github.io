@@ -1,4 +1,3 @@
-import React from "react";
 import ClimexData from '../projects/Climex.js';
 
 const Climex = () => (

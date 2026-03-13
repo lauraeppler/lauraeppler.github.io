@@ -1,6 +1,3 @@
-import React from "react";
-import FourWaysData from '../projects/FourWays.js';
-
 const FourWays = () => {
   return (
   <section className="project-detail fourways">
