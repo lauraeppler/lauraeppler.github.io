@@ -1,13 +1,7 @@
 import "@/styles/Overview.css";
 import { Project } from "@/types/Project";
 
-const Overview = ({
-  project,
-  className,
-}: {
-  project: Project;
-  className: string;
-}) => {
+const Overview = ({ project, className }: { project: Project; className: string }) => {
   return (
     <div className={`overview-layout ${className}`}>
       <dl className="overview-details">

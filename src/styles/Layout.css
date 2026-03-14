@@ -6,11 +6,11 @@
 
   display: grid;
   height: 100dvh;
-  grid-template-columns: 
+  grid-template-columns:
     [fullwidth-start] var(--padding)
-    [xlwrapper-start] var(--xl-wrapper) 
-    [wrapper-start] var(--wrapper-width) 
-    [wrapper-end] var(--xl-wrapper) 
+    [xlwrapper-start] var(--xl-wrapper)
+    [wrapper-start] var(--wrapper-width)
+    [wrapper-end] var(--xl-wrapper)
     [xlwrapper-end] var(--padding)
     [fullwidth-end];
   grid-template-rows: auto 1fr;

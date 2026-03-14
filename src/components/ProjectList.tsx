@@ -9,10 +9,7 @@ const ProjectList = () => {
     <section className="projects" id="projects">
       <h2>Meine Projekte</h2>
       <div className="project-list">
-        {projects &&
-          projects.map((project, idx) => (
-            <ProjectThumbnail key={idx} {...project} />
-          ))}
+        {projects && projects.map((project, idx) => <ProjectThumbnail key={idx} {...project} />)}
       </div>
     </section>
   );

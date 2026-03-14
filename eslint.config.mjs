@@ -1,18 +1,17 @@
+import { defineConfig } from "eslint/config";
 import js from "@eslint/js";
 import globals from "globals";
 import pluginReact from "eslint-plugin-react";
 import tseslint from "typescript-eslint";
+import eslintConfigPrettier from "eslint-config-prettier";
 
-export default tseslint.config(
-  // 1. Globally ignored folders
+export default defineConfig(
   { ignores: ["dist", "build", "node_modules"] },
-  
-  // 2. Base configs
+
   js.configs.recommended,
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
-  
-  // 3. Custom rules & TS support
+
   {
     files: ["**/*.{ts,tsx,js,jsx,mjs}"],
     languageOptions: {
@@ -21,13 +20,11 @@ export default tseslint.config(
         ...globals.node,
       },
     },
-    settings: {
-      react: {
-        version: "detect",
-      },
-    },
+    settings: { react: { version: "detect" } },
     rules: {
       "react/react-in-jsx-scope": "off",
     },
-  }
+  },
+
+  eslintConfigPrettier,
 );

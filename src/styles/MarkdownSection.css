@@ -64,12 +64,13 @@
       text-transform: uppercase;
     }
 
-    p, li {
+    p,
+    li {
       font-size: clamp(1rem, 1.02vw, 1.12rem);
       line-height: 1.85;
       color: var(--muted);
     }
-    
+
     strong {
       color: var(--text);
     }

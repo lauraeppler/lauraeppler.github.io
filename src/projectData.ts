@@ -1,12 +1,8 @@
 import { Project } from "./types/Project";
 
 export function useFetchProjectContent(): Project[];
-export function useFetchProjectContent(
-  id: string | undefined,
-): Project | undefined;
-export function useFetchProjectContent(
-  id?: string,
-): Project | Project[] | undefined {
+export function useFetchProjectContent(id: string | undefined): Project | undefined;
+export function useFetchProjectContent(id?: string): Project | Project[] | undefined {
   const BounceBallData: Project = {
     id: "bounceball",
     title: "Bounce Ball - Neon Party Arcade",
@@ -84,12 +80,7 @@ export function useFetchProjectContent(
     tools: "",
     images: ["bild3.jpg", "bild4.jpg"],
     link: "/projekt/Climex",
-    tags: [
-      "UX/UI Design",
-      "Informationsarchitektur",
-      "Mobile App",
-      "Studienprojekt",
-    ],
+    tags: ["UX/UI Design", "Informationsarchitektur", "Mobile App", "Studienprojekt"],
     sections: [
       {
         id: "projektziel",
@@ -112,8 +103,7 @@ export function useFetchProjectContent(
   const EatMoveData: Project = {
     id: "eatmove",
     title: "Eat&Move",
-    description:
-      "Eine mobile Anwendung, die Rezepte und Workouts in einem System vereint.",
+    description: "Eine mobile Anwendung, die Rezepte und Workouts in einem System vereint.",
     details:
       "Ausführliche Informationen zu Projekt 4. Hier kannst du alles beschreiben, was wichtig ist.",
     context:
@@ -146,8 +136,7 @@ export function useFetchProjectContent(
   const FourWaysData: Project = {
     id: "fourways",
     title: "FourWays - Smarthome App",
-    description:
-      "Eine blickbasierte Smarthome-App für Menschen mit Bewegungseinschränkungen",
+    description: "Eine blickbasierte Smarthome-App für Menschen mit Bewegungseinschränkungen",
     details:
       "Eine blickbasierte Smarthome-App zur Steuerung des Wohnumfelds für Menschen mit motorischen Einschränkungen",
     context: "BMBF-Forschungsprojekt in Kooperation mit dem Startup Treye Tech",
@@ -189,8 +178,7 @@ export function useFetchProjectContent(
   const LocalMessengerData: Project = {
     id: "localmessenger",
     title: "Local Messenger",
-    description:
-      "Eine App zur Unterstützungsvermittlung in ambulanten Wohnformen",
+    description: "Eine App zur Unterstützungsvermittlung in ambulanten Wohnformen",
     details:
       "Eine App zur schnellen und einfachen Kommunikation zwischen Menschen mit Unterstützungsbedarf und Assistierenden der ambulanten Betreuung und Pflege",
     context: "Forschungsprojekt in Kooperation mit der Diakonie Kork",
@@ -222,8 +210,7 @@ export function useFetchProjectContent(
   const ShuffleData: Project = {
     id: "shuffle",
     title: 'SHUFFLE - Knowledge Badge "Barrierefrei lehren"',
-    description:
-      "Ein Qualifizierungsangebot zur digitalen Barrierefreiheit in der Lehre",
+    description: "Ein Qualifizierungsangebot zur digitalen Barrierefreiheit in der Lehre",
     details:
       "Ein Weiterbildungsangebot zur digitalen Barrierefreiheit in der Hochschullehre mit öffentlich zugänglichem Onlinekurs und optionaler Qualifizierungsprüfung.",
     context: "Forschungsprojekt SHUFFLE in Kooperation mit IAAP D-A-CH",
@@ -231,11 +218,7 @@ export function useFetchProjectContent(
     period: "??",
     images: ["bild1.jpg", "bild2.jpg"],
     link: "/projekt/SHUFFLE",
-    tags: [
-      "Barrierefreiheit in der Bildung",
-      "Weiterbildungsangebot",
-      "Projektleitung",
-    ],
+    tags: ["Barrierefreiheit in der Bildung", "Weiterbildungsangebot", "Projektleitung"],
     sections: [
       {
         id: "projektziel",

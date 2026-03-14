@@ -43,7 +43,7 @@
     padding: 22px;
     border-radius: 18px;
 
-      .overview-item {
+    .overview-item {
       grid-template-columns: 1fr;
       gap: 6px;
     }

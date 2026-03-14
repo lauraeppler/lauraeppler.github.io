@@ -3,7 +3,6 @@ import "@/styles/App.css";
 const Contact = () => (
   <section className="contact" id="contact">
     <h2>Kontakt</h2>
-
   </section>
 );
 
