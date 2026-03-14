@@ -1,25 +1,30 @@
 import "@/styles/Overview.css";
-import { Project } from "@/types/Project";
+import { ProjectOverview } from "@/types/Project.ts";
 
-const Overview = ({ project, className }: { project: Project; className: string }) => {
+interface OverviewProps {
+  overview: ProjectOverview;
+  className?: string;
+}
+
+const Overview = ({ overview, className }: OverviewProps) => {
   return (
     <div className={`overview-layout ${className}`}>
       <dl className="overview-details">
         <div className="overview-item">
           <dt>Kontext</dt>
-          <dd>{project.context}</dd>
+          <dd>{overview.context}</dd>
         </div>
         <div className="overview-item">
           <dt>Rolle</dt>
-          <dd>{project.role}</dd>
+          <dd>{overview.role}</dd>
         </div>
         <div className="overview-item">
           <dt>Zeitraum</dt>
-          <dd>{project.period}</dd>
+          <dd>{overview.period}</dd>
         </div>
-        {project.tools && (
+        {overview.tools && (
           <div className="overview-item">
-            <dt>Tools</dt> <dd>{project.tools}</dd>
+            <dt>Tools</dt> <dd>{overview.tools}</dd>
           </div>
         )}
       </dl>

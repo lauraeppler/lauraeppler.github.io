@@ -1,4 +1,5 @@
 .project-detail {
+  display: grid;
   background: var(--surface);
   grid-column: fullwidth;
   grid-template-columns: subgrid;

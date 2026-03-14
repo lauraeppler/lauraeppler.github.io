@@ -1,5 +1,0 @@
-Ziel des Semesters war es, eine **mobile Utility-App mit umfangreichem Content** zu entwickeln – von der Ideenfindung bis zur prototypischen Umsetzung. Dafür sollte eine App-Idee gewählt werden, die viele Inhalte sinnvoll organisiert und gleichzeitig durch eine klare Struktur und intuitive Navigation überzeugt.
-
-Für dieses Projekt entstand Eat&Move – eine App, die gesunde Rezepte und Workoutprogramme kombiniert. Nutzende können Rezepte nach Kategorien und Vorlieben durchsuchen, Inhalte speichern und eigene Inhalte ergänzen. Zudem bietet die App Trainingsübersichten und Workouts, sodass Ernährung und Bewegung in einer Anwendung zusammengeführt werden.
-
-Der Fokus lag vor allem auf einem sauberen UX-Prozess: von der Zielgruppen-Definition über Informationsarchitektur und erste Papier-Skizzen bis zum klickbaren High-Fidelity-Prototyp.

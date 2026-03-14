@@ -1,6 +1,6 @@
 .layout {
   --padding: minmax(28px, 1fr);
-  --wrapper-width: clamp(0px, 100vw, 680px);
+  --wrapper-width: clamp(0px, 100dvw, 680px);
   --xl-wrapper: minmax(0, 180px);
   /* xl-wrapper width = 2 * xl-wrapper + wrapper-width */
 

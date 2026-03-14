@@ -21,7 +21,7 @@
   h2 {
     margin: 0 0 24px;
     text-align: center;
-    font-size: clamp(2.2rem, 3vw, 3.2rem);
+    font-size: clamp(2.2rem, 3dvw, 3.2rem);
     line-height: 1.1;
     letter-spacing: -0.03em;
     color: var(--text);
@@ -33,7 +33,7 @@
     max-width: 980px;
     margin: 0 auto;
     text-align: center;
-    font-size: clamp(1.1rem, 1.3vw, 1.42rem);
+    font-size: clamp(1.1rem, 1.3dvw, 1.42rem);
     line-height: 1.8;
     color: #666f8f;
   }

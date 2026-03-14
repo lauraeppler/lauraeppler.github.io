@@ -10,7 +10,7 @@
       text-align: center;
 
       p {
-        font-size: clamp(1.08rem, 1.18vw, 1.28rem);
+        font-size: clamp(1.08rem, 1.18dvw, 1.28rem);
         line-height: 1.75;
       }
     }
@@ -37,7 +37,7 @@
   h2 {
     margin: 0 0 28px;
     text-align: center;
-    font-size: clamp(2rem, 2.6vw, 2.9rem);
+    font-size: clamp(2rem, 2.6dvw, 2.9rem);
     line-height: 1.1;
     letter-spacing: -0.03em;
     color: var(--text);
@@ -51,7 +51,7 @@
     h3 {
       margin: 0 0 16px;
       color: var(--primary);
-      font-size: clamp(1.3rem, 1.7vw, 1.8rem);
+      font-size: clamp(1.3rem, 1.7dvw, 1.8rem);
       line-height: 1.25;
     }
 
@@ -66,7 +66,7 @@
 
     p,
     li {
-      font-size: clamp(1rem, 1.02vw, 1.12rem);
+      font-size: clamp(1rem, 1.02dvw, 1.12rem);
       line-height: 1.85;
       color: var(--muted);
     }
