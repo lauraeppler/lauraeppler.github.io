@@ -1,8 +1,8 @@
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer';
+import Header from '@/components/Header'
+import Footer from '@/components/Footer';
 import { Outlet } from 'react-router-dom';
-import useSmoothScrolling from '../hooks/useSmoothScrolling';
-import './Layout.css';
+import useSmoothScrolling from '@/hooks/useSmoothScrolling';
+import '@/styles/Layout.css';
 
 function Layout() {
   useSmoothScrolling();

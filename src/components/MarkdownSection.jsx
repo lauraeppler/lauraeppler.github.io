@@ -1,5 +1,5 @@
 import Markdown from "react-markdown";
-import './MarkdownSection.css';
+import '@/styles/MarkdownSection.css';
 
 const MarkdownSection = ({section}) => {
   return (

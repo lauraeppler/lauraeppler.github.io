@@ -1,5 +1,5 @@
-import './Hero.css';
-import Overview from '../Overview/Overview';
+import Overview from '@/components/Overview';
+import '@/styles/Hero.css';
 
 const Hero = ({project}) => {
   return (

@@ -1,7 +1,6 @@
-import "../App.css";
 import { useFetchProjectContent } from "../projectData";
-
-import Project from "./Project";
+import Project from "@/components/Project";
+import "@/styles/App.css";
 
 const ProjectList = () => {
   const projects = useFetchProjectContent();

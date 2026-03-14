@@ -1,4 +1,4 @@
-import './Overview.css';
+import '@/styles/Overview.css';
 
 const Overview = ({project, className}) => {
   return (

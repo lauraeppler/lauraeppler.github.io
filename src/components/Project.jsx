@@ -1,6 +1,5 @@
-import "../App.css";
 import { Link } from "react-router-dom";
-
+import "@/styles/App.css";
 
 const Project = ({ title, description, link, id, tags }) => (
   <div className="project">

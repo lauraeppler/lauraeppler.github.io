@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useFetchProjectContent } from "../../projectData";
 import { useState, useEffect } from "react";
-import Hero from "../../components/Hero/Hero";
-import './ProjectDetail.css';
-import MarkdownSection from "../../components/MarkdownSection/MarkdownSection";
+import Hero from "@/components/Hero";
+import MarkdownSection from "@/components/MarkdownSection";
+import '@/styles/ProjectDetail.css';
 
 const ProjectDetail = () => {
   const { id } = useParams();
