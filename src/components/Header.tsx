@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HOME } from './../routes';
+import { HOME } from "../routes.ts";
 import "@/styles/Header.css";
 
 const Header = () => {
@@ -8,21 +8,21 @@ const Header = () => {
       <nav aria-label="Hauptnavigation">
         <ul>
           <li>
-            <Link to={{pathname: HOME, hash: '#about'}}>Über mich</Link>
+            <Link to={{ pathname: HOME, hash: "#about" }}>Über mich</Link>
           </li>
           <li>
-            <Link to={{pathname: HOME, hash: '#projects'}}>Projekte</Link>
+            <Link to={{ pathname: HOME, hash: "#projects" }}>Projekte</Link>
           </li>
           <li>
-            <Link to={{pathname: HOME, hash: '#contact'}}>Kontakt</Link>
+            <Link to={{ pathname: HOME, hash: "#contact" }}>Kontakt</Link>
           </li>
           <li className="lebenslauf-link">
-            <Link to={{pathname: HOME, hash: ''}}>Lebenslauf (PDF)</Link>
+            <Link to={{ pathname: HOME, hash: "" }}>Lebenslauf (PDF)</Link>
           </li>
         </ul>
       </nav>
     </header>
-  )
+  );
 };
 
 export default Header;

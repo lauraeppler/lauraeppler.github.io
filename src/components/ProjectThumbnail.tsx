@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import "@/styles/App.css";
+import { Project } from "@/types/Project";
 
-const Project = ({ title, description, link, id, tags }) => (
+const ProjectThumbnail = ({ title, description, id, tags }: Project) => (
   <div className="project">
     {tags && tags.length > 0 && (
       <div className="tags">
         {tags.map((tag, index) => (
-          <span key={index} className="tag">{tag}</span>
+          <span key={index} className="tag">
+            {tag}
+          </span>
         ))}
       </div>
     )}
@@ -16,4 +19,4 @@ const Project = ({ title, description, link, id, tags }) => (
   </div>
 );
 
-export default Project;
+export default ProjectThumbnail;
