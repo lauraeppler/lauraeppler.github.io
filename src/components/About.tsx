@@ -1,4 +1,4 @@
-import "@/styles/App.css";
+import "@/styles/About.css";
 
 const About = () => (
   <section className="about" id="about">
