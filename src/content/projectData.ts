@@ -3,7 +3,7 @@ import EatMove from "@/content/eatmove.mdx";
 import FourWays from "@/content/fourways.mdx";
 import LocalMessenger from "@/content/localmessenger.mdx";
 import Shuffle from "@/content/shuffle.mdx";
-// import Climex from "@/content/climex/climex.mdx";
+import Climex from "@/content/climex.mdx";
 // import Camture from "@/content/camture/camture.mdx";
 import { Project } from "@/types/Project";
 
@@ -40,57 +40,25 @@ const BounceBallData: Project = {
 //   images: ["bild9.jpg", "bild10.jpg"],
 //   link: "/projekt/Camture",
 //   tags: ["UX/UI Design", "Digitale Barrierefreiheit", "Webentwicklung"],
-//   sections: [
-//     {
-//       id: "projektziel",
-//       title: "Projektziel",
-//       filePath: "/content/camture/projektziel.md",
-//     },
-//     {
-//       id: "meine-rolle",
-//       title: "Meine Rolle",
-//       filePath: "/content/camture/meine-rolle.md",
-//     },
-//     {
-//       id: "projektstruktur",
-//       title: "Projektstruktur",
-//       filePath: "/content/camture/projektstruktur.md",
-//     },
-//   ],
 // };
 
-// const ClimexData: Project = {
-//   id: "climex",
-//   component: Climex,
-//   title: "Climex",
-//   description: "Kurze Beschreibung deines zweiten Projekts.",
-//   details:
-//     "Ausführliche Informationen zu Projekt 2. Hier kannst du alles beschreiben, was wichtig ist.",
-//   context: "",
-//   role: "",
-//   period: "??",
-//   tools: "",
-//   images: ["bild3.jpg", "bild4.jpg"],
-//   link: "/projekt/Climex",
-//   tags: ["UX/UI Design", "Informationsarchitektur", "Mobile App", "Studienprojekt"],
-//   sections: [
-//     {
-//       id: "projektziel",
-//       title: "Projektziel",
-//       filePath: "/content/climex/projektziel.md",
-//     },
-//     {
-//       id: "meine-rolle",
-//       title: "Meine Rolle",
-//       filePath: "/content/climex/meine-rolle.md",
-//     },
-//     {
-//       id: "projektstruktur",
-//       title: "Projektstruktur",
-//       filePath: "/content/climex/projektstruktur.md",
-//     },
-//   ],
-// };
+const ClimexData: Project = {
+  id: "climex",
+  component: Climex,
+  title: "Climex",
+  description: "Ein Serious Game, das Jugendliche spielerisch für die Folgen des Klimawandels sensibilisiert.",
+  details:
+    "Ein Serious Game, das Jugendliche spielerisch für die Folgen des Klimawandels sensibilisiert. Durch eine Kombination aus Storytelling, Gamification und realen Handlungsaufgaben vermittelt die App Wissen, schafft emotionale Nähe zum Thema und motiviert zu nachhaltigem Verhalten",
+  overview: {
+    context: 'Semesterprojekt im Studienfach "User Interface Design" an der Hochschule der Medien Stuttgart',
+    role: "",
+    period: "Sommersemester 2020",
+    tools: "Marvel, Adobe XD, Gimp",
+  },
+  images: ["bild3.jpg", "bild4.jpg"],
+  link: "/projekt/Climex",
+  tags: ["UX/UI Design", "Informationsarchitektur", "Mobile App", "Serious Game", "Studienprojekt"],
+};
 
 const EatMoveData: Project = {
   id: "eatmove",
@@ -169,7 +137,7 @@ export const projectsData: Record<string, Project> = {
   shuffle: ShuffleData,
   localmessenger: LocalMessengerData,
   fourways: FourWaysData,
-  // climex: ClimexData,
+  climex: ClimexData,
   // camture: CamtureData,
   bounceball: BounceBallData,
   eatmove: EatMoveData,
