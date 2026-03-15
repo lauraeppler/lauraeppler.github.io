@@ -54,11 +54,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-section {
-  display: grid;
-  grid-column: wrapper;
-}
-
 img {
   max-width: 100%;
   display: block;

@@ -1,0 +1,11 @@
+.module-list {
+  display: grid;
+  grid-column: xlwrapper;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  list-style: none;
+  gap: 2em;
+  max-width: 900px;
+  width: 100%;
+  padding-left: 0;
+  margin-inline: auto;
+}

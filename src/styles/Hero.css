@@ -1,5 +1,6 @@
 .hero-section {
   position: relative;
+  display: grid;
   grid-column: fullwidth;
   grid-template-columns: subgrid;
   padding: 3em 0 5em;
