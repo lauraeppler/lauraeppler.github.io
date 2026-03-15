@@ -167,8 +167,8 @@ const ShuffleData: Project = {
 
 export const projectsData: Record<string, Project> = {
   shuffle: ShuffleData,
-  localMessenger: LocalMessengerData,
-  localmessenger: FourWaysData,
+  localmessenger: LocalMessengerData,
+  fourways: FourWaysData,
   // climex: ClimexData,
   // camture: CamtureData,
   bounceball: BounceBallData,
