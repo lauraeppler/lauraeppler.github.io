@@ -1,9 +1,5 @@
 .module {
-  padding: max(15px, 1.5dvw) min(40px, 3dvw) max(20px, 2dvw);
-  box-shadow: var(--shadow-card);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: var(--surface);
+  padding: clamp(15px, 1.5dvw, 25px) min(40px, 3dvw) clamp(20px, 2dvw, 30px);
 
   & > p > strong {
     font-size: clamp(1.3rem, 1.7dvw, 1.8rem);

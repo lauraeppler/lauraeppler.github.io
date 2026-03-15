@@ -7,13 +7,13 @@ const Header = () => {
     <header className="main-header">
       <nav aria-label="Hauptnavigation">
         <ul>
-          <li>
+          <li className="main-header__link">
             <Link to={{ pathname: HOME, hash: "#about" }}>Über mich</Link>
           </li>
-          <li>
+          <li className="main-header__link">
             <Link to={{ pathname: HOME, hash: "#projects" }}>Projekte</Link>
           </li>
-          <li>
+          <li className="main-header__link">
             <Link to={{ pathname: HOME, hash: "#contact" }}>Kontakt</Link>
           </li>
           <li className="lebenslauf-link">

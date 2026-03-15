@@ -1,20 +1,36 @@
-import React from "react";
+import "@/styles/Card.css";
 
 interface CardProps {
+  className?: string;
+  link?: string;
   title: string;
-  color?: "blue" | "green" | "purple" | "default"; // Restrict colors for safety
-  children: React.ReactNode; // This represents the markdown inside the tags
+  img?: string;
+  alt?: string;
 }
 
-const Card = ({ title, color = "default", children }: CardProps) => {
+const Card = ({ className = "", link, title, img, alt = "" }: CardProps) => {
+  const isClickable = !!link;
+  const cardClasses = `card card-basic ${isClickable ? "card-animation" : ""} ${className}`.trim();
+
   return (
-    <div className={`mdx-card mdx-card-${color}`}>
-      <div className="mdx-card-header">
-        <h4 className="mdx-card-title">{title}</h4>
+    <li className={cardClasses}>
+      {img && (
+        <div className="img-wrapper">
+          <img src={img} alt={alt} loading="lazy" />
+        </div>
+      )}
+
+      <div className="card-content">
+        {isClickable ? (
+          /* The <a> tag is inside, but the CSS will stretch it to the whole <li> */
+          <a href={link} className="main-card-link">
+            <p>{title}</p>
+          </a>
+        ) : (
+          <p>{title}</p>
+        )}
       </div>
-      {/* Render the markdown content */}
-      <div className="mdx-card-body">{children}</div>
-    </div>
+    </li>
   );
 };
 

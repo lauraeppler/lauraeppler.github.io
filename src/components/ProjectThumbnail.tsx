@@ -3,7 +3,7 @@ import "@/styles/ProjectThumbnail.css";
 import { Project } from "@/types/Project";
 
 const ProjectThumbnail = ({ title, description, id, tags }: Project) => (
-  <div className="project-thumbnail">
+  <div className="project-thumbnail card-animation">
     {tags && tags.length > 0 && (
       <div className="tags">
         {tags.map((tag, index) => (

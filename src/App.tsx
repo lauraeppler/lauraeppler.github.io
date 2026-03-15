@@ -7,12 +7,14 @@ import Card from "./components/Card.tsx";
 import Section from "./components/Section.tsx";
 import ModuleList from "./components/ModuleList.tsx";
 import Module from "./components/Module.tsx";
+import CardList from "./components/CardList.tsx";
 
 const isMaintenance = import.meta.env.VITE_REACT_APP_MAINTENANCE === "true";
 console.log("VITE_REACT_APP_MAINTENANCE =", import.meta.env.VITE_REACT_APP_MAINTENANCE);
 
 const mdxComponents = {
   Card: Card,
+  CardList: CardList,
   Section: Section,
   ModuleList: ModuleList,
   Module: Module,
