@@ -1,21 +1,32 @@
 .hero-section {
+  position: relative;
   grid-column: fullwidth;
   grid-template-columns: subgrid;
-  padding: 64px 0 100px;
-  background: linear-gradient(110deg, #7e9dff 0%, #6f72f3 38%, #9a63e6 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  padding: 3em 0 5em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background: linear-gradient(110deg, #7e9dff 0%, #6f72f3 38%, #9a63e6 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  }
 
   .hero-wrapper {
+    z-index: 10;
     grid-column: xlwrapper;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     gap: 3dvw;
   }
 
   .project-hero {
     color: #ffffff;
     text-align: left;
+    flex: 1 1 min(600px, 100%);
 
     h1 {
       max-width: 100%;
@@ -36,21 +47,16 @@
   }
 
   .project-overview {
+    flex: 1 1 min(450px, 100%);
   }
 }
 
 @media (max-width: 900px) {
   .hero-section {
+    padding: 3em 0 0;
     min-height: auto;
 
-    &::after {
-      height: 68px;
-      clip-path: polygon(0 62%, 100% 24%, 100% 100%, 0 100%);
-    }
-
     .project-hero {
-      padding: 44px 24px 120px;
-
       h1 {
         max-width: 100%;
         font-size: clamp(2.1rem, 9dvw, 3.2rem);

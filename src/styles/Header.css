@@ -17,6 +17,7 @@
     gap: 40px;
     min-height: 74px;
     list-style: none;
+    padding: 0;
   }
 
   li {
@@ -69,7 +70,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .main-header nav ul {
     flex-wrap: wrap;
     justify-content: center;

@@ -1,5 +1,4 @@
 .content-section {
-  padding: 72px 0;
   background: var(--surface);
 
   &:first-of-type {
@@ -45,7 +44,6 @@
 
   .project-content {
     width: 100%;
-    max-width: 900px;
     margin: 0 auto;
 
     h3 {
@@ -92,12 +90,6 @@
 
 @media (max-width: 900px) {
   .content-section {
-    padding: 48px 24px;
-
-    &:first-of-type {
-      padding-top: 64px;
-    }
-
     .project-content li {
       padding: 16px 18px;
       border-radius: 14px;

@@ -3,4 +3,5 @@
   background: var(--surface);
   grid-column: fullwidth;
   grid-template-columns: subgrid;
+  row-gap: 4em;
 }
