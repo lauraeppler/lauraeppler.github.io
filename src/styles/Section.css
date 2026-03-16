@@ -25,6 +25,18 @@
       grid-column: wrapper;
     }
   }
+  .prototype-wrap {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .prototype-wrap iframe {
+    width: 100%;
+    aspect-ratio: 9 / 19.5;
+    border: 0;
+    border-radius: 28px;
+    overflow: hidden;
+  }
 }
 
 #mein-beitrag.content-section .project-content .module-list {

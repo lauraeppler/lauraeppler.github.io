@@ -4,7 +4,7 @@ import FourWays from "@/content/fourways.mdx";
 import LocalMessenger from "@/content/localmessenger.mdx";
 import Shuffle from "@/content/shuffle.mdx";
 import Climex from "@/content/climex.mdx";
-// import Camture from "@/content/camture/camture.mdx";
+import Camture from "@/content/camture.mdx";
 import { Project } from "@/types/Project";
 
 const BounceBallData: Project = {
@@ -26,21 +26,23 @@ const BounceBallData: Project = {
   tags: ["UX/UI Design", "Game", "Studienprojekt"],
 };
 
-// const CamtureData: Project = {
-//   id: "camture",
-//   component: Camture,
-//   title: "Camture",
-//   description: "Kurze Beschreibung deines fünften Projekts.",
-//   details:
-//     "Ausführliche Informationen zu Projekt 5. Hier kannst du alles beschreiben, was wichtig ist.",
-//   context: "",
-//   role: "",
-//   period: "??",
-//   tools: "",
-//   images: ["bild9.jpg", "bild10.jpg"],
-//   link: "/projekt/Camture",
-//   tags: ["UX/UI Design", "Digitale Barrierefreiheit", "Webentwicklung"],
-// };
+ const CamtureData: Project = {
+   id: "camture",
+   component: Camture,
+   title: "Camture",
+   description: "Kurze Beschreibung deines fünften Projekts.",
+   details:
+     "Ausführliche Informationen zu Projekt 5. Hier kannst du alles beschreiben, was wichtig ist.",
+   overview: {
+     context: 'Semesterprojekt im Studienfach "Mobile Medien" an der Hochschule der Medien Stuttgart',
+     role: "",
+     period: "6. Semester",
+     tools: "",
+   },
+   images: ["bild9.jpg", "bild10.jpg"],
+   link: "/projekt/Camture",
+   tags: ["UX/UI Design", "Mobile App", "Studienprojekt"],
+ };
 
 const ClimexData: Project = {
   id: "climex",
@@ -48,12 +50,12 @@ const ClimexData: Project = {
   title: "Climex",
   description: "Ein Serious Game, das Jugendliche spielerisch für die Folgen des Klimawandels sensibilisiert.",
   details:
-    "Ein Serious Game, das Jugendliche spielerisch für die Folgen des Klimawandels sensibilisiert. Durch eine Kombination aus Storytelling, Gamification und realen Handlungsaufgaben vermittelt die App Wissen, schafft emotionale Nähe zum Thema und motiviert zu nachhaltigem Verhalten",
+    "Ein Serious Game, das Jugendliche und junge Erwachsene spielerisch für die Folgen des Klimawandels sensibilisiert. Durch die Verbindung von Storytelling, Gamification und alltagsnahen Handlungsaufgaben vermittelt die App Wissen, schafft emotionale Nähe zum Thema und motiviert zu nachhaltigem Verhalten.",
   overview: {
     context: 'Semesterprojekt im Studienfach "User Interface Design" an der Hochschule der Medien Stuttgart',
-    role: "",
+    role: "UX/UI Design, Recherche, Konzeption, Wireframing, Prototyping, Evaluation",
     period: "Sommersemester 2020",
-    tools: "Marvel, Adobe XD, Gimp",
+    tools: "Marvel, Adobe XD",
   },
   images: ["bild3.jpg", "bild4.jpg"],
   link: "/projekt/Climex",
@@ -138,7 +140,7 @@ export const projectsData: Record<string, Project> = {
   localmessenger: LocalMessengerData,
   fourways: FourWaysData,
   climex: ClimexData,
-  // camture: CamtureData,
+  camture: CamtureData,
   bounceball: BounceBallData,
   eatmove: EatMoveData,
 };
