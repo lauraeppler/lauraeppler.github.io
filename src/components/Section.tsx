@@ -12,9 +12,9 @@ const Section = ({ id, title, children, wrapperSize = "normal" }: SectionProps) 
   const wrapperClass = wrapperSize === "xl" ? "xl-wrapper" : "wrapper";
 
   return (
-    <section id={id} className={`content-section ${wrapperClass}`}>
+    <section id={id} className={`section-container ${wrapperClass}`}>
       <h2>{title}</h2>
-      <div className="project-content">{children}</div>
+      {children}
     </section>
   );
 };

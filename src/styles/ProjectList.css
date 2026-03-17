@@ -1,4 +1,4 @@
-.projects-section {
+.project-list-section {
   padding: 56px 48px 48px;
   background: var(--surface);
 
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 900px) {
-  .projects-section {
+  .project-list-section {
     padding: 40px 16px 16px;
 
     .project-list {

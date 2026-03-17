@@ -21,17 +21,27 @@
 
   main,
   .main-scroll-container,
-  .main-scroll-container > section {
-    grid-column: fullwidth;
-    grid-template-columns: subgrid;
+  .main-scroll-container > .section-container {
     display: grid;
+    grid-template-columns: subgrid;
+    grid-auto-rows: max-content; /* sections should not stretch to fit whole height of page */
+    grid-column: fullwidth;
 
-    /* align children in wrapper */
+    /* This will set the children width to normal wrapper */
+    /* use on container, where all children will have the same width */
     &.wrapper > * {
       grid-column: wrapper;
     }
 
+    /* This will set the children width to xl-wrapper */
+    /* use on container, where all children will have the same width */
     &.xl-wrapper > * {
+      grid-column: xlwrapper;
+    }
+
+    /* This will set of the element width to the xl-wrapper */
+    /* use on single element */
+    .xl-item {
       grid-column: xlwrapper;
     }
   }
@@ -44,7 +54,6 @@
 
   .main-scroll-container {
     align-self: stretch;
-    grid-auto-rows: max-content; /* sections should not stretch to fit whole height of page */
     row-gap: 4em;
   }
 }

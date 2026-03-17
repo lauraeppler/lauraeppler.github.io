@@ -1,4 +1,4 @@
-.module-list {
+ul.module-list {
   display: grid;
   grid-column: xlwrapper;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

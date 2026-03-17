@@ -1,17 +1,10 @@
-.content-section {
-  background: var(--surface);
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-auto-rows: max-content;
-
+.section-container {
   &:first-of-type {
     padding-top: 84px;
 
-    .project-content {
-      p {
-        font-size: clamp(1.08rem, 1.18dvw, 1.28rem);
-        line-height: 1.75;
-      }
+    & > p {
+      font-size: clamp(1.08rem, 1.18dvw, 1.28rem);
+      line-height: 1.75;
     }
   }
 
@@ -27,12 +20,4 @@
     border-radius: 28px;
     overflow: hidden;
   }
-}
-
-#mein-beitrag.content-section .project-content .module-list {
-  grid-column: xlwrapper;
-}
-
-#ergebnisse.content-section .project-content .card-list {
-  grid-column: xlwrapper;
 }
