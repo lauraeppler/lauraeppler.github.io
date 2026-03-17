@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useProjectData } from "@/hooks/useProjectData";
-import "@/styles/ProjectDetail.css";
 import Hero from "@/components/Hero.tsx";
 
 const ProjectDetail = () => {
@@ -18,10 +17,10 @@ const ProjectDetail = () => {
   const MarkdownComponent = project.component;
 
   return (
-    <div className="project-detail">
+    <>
       <Hero title={project.title} details={project.details} overview={project.overview} />
       <MarkdownComponent />
-    </div>
+    </>
   );
 };
 

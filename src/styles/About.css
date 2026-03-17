@@ -1,17 +1,20 @@
 #about {
   grid-column: fullwidth;
+  display: grid;
+  align-content: center;
   position: relative;
-  padding: 64px 48px 170px;
+  height: 50dvh;
   background:
     linear-gradient(180deg, rgba(241, 242, 252, 0.94), rgba(247, 247, 252, 0.98)), var(--surface);
   overflow: hidden;
+  padding-top: 0;
 
   &::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -1px;
+    bottom: -5dvh;
     height: 110px;
     background: var(--surface);
     clip-path: polygon(0 62%, 100% 28%, 100% 100%, 0 100%);
@@ -30,7 +33,6 @@
   p {
     position: relative;
     z-index: 1;
-    max-width: 980px;
     margin: 0 auto;
     text-align: center;
     font-size: clamp(1.1rem, 1.3dvw, 1.42rem);

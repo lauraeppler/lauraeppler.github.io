@@ -20,19 +20,31 @@
   }
 
   main,
-  .main-content {
-    display: grid;
-    grid-template-columns: subgrid;
-  }
-  main {
-    grid-template-rows: 1fr auto; /* makes footer stick to the bottom of scroll-container */
+  .main-scroll-container,
+  .main-scroll-container > section {
     grid-column: fullwidth;
+    grid-template-columns: subgrid;
+    display: grid;
+
+    /* align children in wrapper */
+    &.wrapper > * {
+      grid-column: wrapper;
+    }
+
+    &.xl-wrapper > * {
+      grid-column: xlwrapper;
+    }
+  }
+
+  main {
+    /* makes footer stick to the bottom of scroll-container */
+    grid-template-rows: 1fr auto;
     overflow-y: auto;
   }
 
-  .main-content {
+  .main-scroll-container {
     align-self: stretch;
-    grid-column: fullwidth;
     grid-auto-rows: max-content; /* sections should not stretch to fit whole height of page */
+    row-gap: 4em;
   }
 }

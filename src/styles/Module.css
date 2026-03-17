@@ -14,6 +14,7 @@
 
     & > li {
       position: relative;
+      line-height: 1.7;
 
       &::before {
         content: "";

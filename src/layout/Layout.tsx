@@ -11,7 +11,7 @@ function Layout() {
     <div className="layout">
       <Header />
       <main>
-        <div className="main-content">
+        <div className="main-scroll-container">
           <Outlet />
         </div>
         <Footer />

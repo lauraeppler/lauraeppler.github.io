@@ -6,7 +6,7 @@ const ProjectList = () => {
   const projects = useProjectData();
 
   return (
-    <section className="projects-section" id="projects">
+    <section className="projects-section content-section xl-wrapper" id="projects">
       <h2>Meine Projekte</h2>
       <div className="project-list">
         {projects.map((project, idx) => (
