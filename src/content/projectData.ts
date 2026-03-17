@@ -30,11 +30,11 @@ const BounceBallData: Project = {
    id: "camture",
    component: Camture,
    title: "Camture",
-   description: "Kurze Beschreibung deines fünften Projekts.",
+   description: "Eine Foto-Challenge-App, mit der Nutzende versteckte und außergewöhnliche Orte in einer Stadt spielerisch entdecken können.",
    details:
-     "Ausführliche Informationen zu Projekt 5. Hier kannst du alles beschreiben, was wichtig ist.",
+     "Eine Foto-Challenge-App, mit der Nutzende versteckte und außergewöhnliche Orte in einer Stadt spielerisch entdecken können. Das Projekt verbindet urbane Exploration, Fotografie, Wettbewerb und Community-Interaktion zu einem motivierenden Nutzungserlebnis und übersetzt das Thema Hidden Culture in ein mobiles Konzept",
    overview: {
-     context: 'Semesterprojekt im Studienfach "Mobile Medien" an der Hochschule der Medien Stuttgart',
+     context: 'Semesterprojekt im Modul "User Experience Design" an der Hochschule der Medien Stuttgart mit der Themenstellung Hidden Culture',
      role: "",
      period: "6. Semester",
      tools: "",
