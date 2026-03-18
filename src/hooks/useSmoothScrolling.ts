@@ -1,21 +1,26 @@
+// useScrollToTop.ts
+import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 
-// smooth scroll to same-site links
-// because native HTML <a href="#"> behavior
-// is not working with React Router
+export const useSmoothScrolling = () => {
+  const { pathname, hash } = useLocation();
 
-const useSmoothScrolling = () => {
-  const location = useLocation();
+  useLayoutEffect(() => {
+    const container = document.getElementById("scroll-container");
+    if (!container) return;
 
-  useEffect(() => {
-    if (location.hash) {
-      const elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
       }
+    } else {
+      // Use requestAnimationFrame to ensure the new Route content
+      // is fully rendered before we scroll the container
+      requestAnimationFrame(() => {
+        container.scrollTo({ top: 0, behavior: "instant" });
+      });
     }
-  }, [location.hash]);
+  }, [pathname, hash]);
 };
-
-export default useSmoothScrolling;
