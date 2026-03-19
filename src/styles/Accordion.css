@@ -1,0 +1,66 @@
+.accordion-container {
+  --acc-icon-width: 1em;
+  --acc-icon-stroke: 0.2em;
+  padding: clamp(25px, 2dvw, 30px) clamp(10px, 3dvw, 30px);
+  margin-block: 0.5em;
+  interpolate-size: allow-keywords; /* only works in chrome */
+
+  .accordion-title {
+    list-style-type: none;
+    display: grid;
+    align-items: center;
+    gap: min(1em, 1.5dvw);
+    grid-template-columns: max-content 1fr max-content;
+
+    .img-wrapper {
+      grid-column: 1;
+      width: 1.4em;
+      aspect-ratio: 1;
+    }
+
+    /* accordion opening/closing icon */
+    &::before,
+    &::after {
+      content: "";
+      grid-column: 3;
+      grid-row: 1;
+      display: block;
+      border-radius: 99px;
+      background-color: var(--primary);
+    }
+
+    &::before {
+      width: var(--acc-icon-width);
+      height: var(--acc-icon-stroke);
+    }
+
+    &::after {
+      width: var(--acc-icon-stroke);
+      height: var(--acc-icon-width);
+      transform: translateX(calc(var(--acc-icon-width) / 2 - var(--acc-icon-stroke) / 2));
+      transition: height 200ms cubic-bezier(0.59, 0.01, 0.36, 0.98);
+    }
+  }
+
+  &[open] {
+    padding: clamp(25px, 2dvw, 30px) clamp(10px, 3dvw, 30px) clamp(20px, 1.5dvw, 25px);
+  }
+
+  /* accordion opening/closing icon shrinking */
+  &[open] .accordion-title::after {
+    height: 0;
+  }
+
+  /* only works in chrome */
+  &::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition:
+      block-size 200ms cubic-bezier(0.59, 0.01, 0.36, 0.98),
+      content-visibility 200ms allow-discrete;
+  }
+
+  &[open]::details-content {
+    block-size: auto;
+  }
+}

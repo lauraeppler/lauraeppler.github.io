@@ -8,6 +8,7 @@ import Section from "./components/Section.tsx";
 import ModuleList from "./components/ModuleList.tsx";
 import Module from "./components/Module.tsx";
 import CardList from "./components/CardList.tsx";
+import Accordion from "./components/Accordion.tsx";
 
 const isMaintenance = import.meta.env.VITE_REACT_APP_MAINTENANCE === "true";
 console.log("VITE_REACT_APP_MAINTENANCE =", import.meta.env.VITE_REACT_APP_MAINTENANCE);
@@ -18,6 +19,7 @@ const mdxComponents = {
   Section: Section,
   ModuleList: ModuleList,
   Module: Module,
+  Accordion: Accordion,
 
   // Bonus: You can even hijack standard HTML tags!
   // h1: (props: any) => <h1 className="text-4xl text-blue-500" {...props} />,
