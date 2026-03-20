@@ -1,5 +1,7 @@
-.card {
-  padding: max(10px, 1.5dvw) min(20px, 2dvw);
+li.card {
+  --padding-block-max: 20px;
+
+  padding: clamp(10px, 3dvw, var(--padding-block-max)) min(20px, 2dvw);
   position: relative; /* Essential! This contains the absolute link */
   display: flex;
   align-items: center;
@@ -25,6 +27,7 @@
 
     & p {
       margin: 0;
+      line-height: 1.6;
     }
   }
 

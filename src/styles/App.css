@@ -1,14 +1,4 @@
 :root {
-  --page-bg: #efedf4;
-  --surface: #ffffff;
-  --surface-soft: #f7f7fc;
-  --text: #1f2446;
-  --muted: #707694;
-  --line: #ececf4;
-  --line-strong: #dde1f0;
-  --primary: #6270f3;
-  --primary-dark: #4959de;
-  --primary-soft: #f4f6ff;
   --shadow-soft: 0 18px 50px rgba(38, 44, 96, 0.08);
   --shadow-card: 0 12px 30px rgba(50, 58, 120, 0.08);
   --shadow-hover: 0 18px 36px rgba(41, 49, 94, 0.1);

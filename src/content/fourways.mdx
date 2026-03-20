@@ -1,3 +1,5 @@
+import "@/styles/fourways.css";
+
 <Section id="projektziel" title="Projektziel">
 
 Touchbasierte Bedienkonzepte stellen für Menschen mit motorischen Einschränkungen – insbesondere bei eingeschränkter oder fehlender Handmotorik – eine erhebliche Barriere dar.
@@ -23,12 +25,12 @@ Der Fokus lag auf der Entwicklung eines klar strukturierten visuellen Leitsystem
 </Section>
 <Section id="designprinzipien" title="Designprinzipien">
 
-<CardList>
-  <Card title="Intuitiv erfassbar" img="" />
-  <Card title="Semantisch eindeutig" img="" />
-  <Card title="Visuell konsistent" img="" />
-  <Card title="Funktional reduziert & fokussiert" img="" />
-  <Card title="Skalierbar & thematisierbar" img="" />
+<CardList className="designprinzipien">
+  <Card className="bg-glass pink" title="Intuitiv erfassbar" img="" />
+  <Card className="bg-glass yellow" title="Semantisch eindeutig" img="" />
+  <Card className="bg-glass green" title="Visuell konsistent" img="" />
+  <Card className="bg-glass blue" title="Funktional reduziert & fokussiert" img="" />
+  <Card className="bg-glass purple" title="Skalierbar & thematisierbar" img="" />
 
 </CardList>
 
@@ -39,27 +41,43 @@ Auf Basis der Designprinzipien entstand eine konsistente visuelle Systematik fü
 
 ### Licht
 
-<div id="light">
+<div id="light" className="icon-list">
   <figure>
-    <img src="/src/assets/projects/fourways/light/light_all_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/light/light_all_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Alle Lampen auswählen</em>
     </figcaption>
   </figure>
   <figure>
-    <img src="/src/assets/projects/fourways/light/light_on_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/light/light_on_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Lampe einschalten</em>
     </figcaption>
   </figure>
   <figure>
-    <img src="/src/assets/projects/fourways/light/light_off_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/light/light_off_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Lampe ausschalten</em>
     </figcaption>
   </figure>
   <figure>
-    <img src="/src/assets/projects/fourways/light/light_colorwheel_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/light/light_colorwheel_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Farbe einstellen</em>
     </figcaption>
@@ -108,7 +126,7 @@ Auf Basis der Designprinzipien entstand eine konsistente visuelle Systematik fü
 
 ### Thermostat
 
-<div id="thermostat">
+<div id="thermostat" className="icon-list">
   <figure>
     <img src="/src/assets/projects/fourways/thermostat/thermostat_all_black.png" alt="" width="150"/>
     <figcaption>
@@ -128,7 +146,11 @@ Auf Basis der Designprinzipien entstand eine konsistente visuelle Systematik fü
 </figure>
 
 <figure>
-  <img src="/src/assets/projects/fourways/thermostat/thermostat_off_black.png" alt="" width="150" />
+  <img
+    src="/src/assets/projects/fourways/thermostat/thermostat_off_black.png"
+    alt=""
+    width="150"
+  />
   <figcaption>
     <em>Thermostat auschalten</em>
   </figcaption>
@@ -181,7 +203,7 @@ Auf Basis der Designprinzipien entstand eine konsistente visuelle Systematik fü
 
 ### Rolladen
 
-<div id="rollershutter">
+<div id="rollershutter" className="icon-list">
   <figure>
     <img
       src="/src/assets/projects/fourways/rollershutter/rollershutter_all_black.png"
@@ -237,27 +259,43 @@ Auf Basis der Designprinzipien entstand eine konsistente visuelle Systematik fü
 
 ### Ventilator
 
-<div id="fan">
+<div id="fan" className="icon-list">
   <figure>
-    <img src="/src/assets/projects/fourways/fan/fan_all_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/fan/fan_all_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Alle Ventilatoren auswählen</em>
     </figcaption>
   </figure>
   <figure>
-    <img src="/src/assets/projects/fourways/fan/fan_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/fan/fan_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Ventilator auswählen</em>
     </figcaption>
   </figure>
   <figure>
-    <img src="/src/assets/projects/fourways/fan/fan_on_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/fan/fan_on_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Ventilator einschalten</em>
     </figcaption>
   </figure>
   <figure>
-    <img src="/src/assets/projects/fourways/fan/fan_off_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/fan/fan_off_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Ventilator ausschalten</em>
     </figcaption>
@@ -266,7 +304,7 @@ Auf Basis der Designprinzipien entstand eine konsistente visuelle Systematik fü
 
 ### Steckdose
 
-<div id="poweroutlet">
+<div id="poweroutlet" className="icon-list">
   <figure>
     <img
       src="/src/assets/projects/fourways/poweroutlet/poweroutlet_all_black.png"
@@ -278,7 +316,11 @@ Auf Basis der Designprinzipien entstand eine konsistente visuelle Systematik fü
     </figcaption>
   </figure>
   <figure>
-    <img src="/src/assets/projects/fourways/poweroutlet/poweroutlet_black.png" alt="" width="150" />
+    <img
+      src="/src/assets/projects/fourways/poweroutlet/poweroutlet_black.png"
+      alt=""
+      width="150"
+    />
     <figcaption>
       <em>Steckdose auswählen</em>
     </figcaption>

@@ -1,0 +1,31 @@
+#fourways {
+  .card-list.designprinzipien {
+    max-width: 100%;
+
+    .card {
+      --padding-block-max: 40px;
+
+      & p {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .icon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 2em;
+    align-content: center;
+    text-align: center;
+    margin-bottom: clamp(2em, 2dvw, 3em);
+
+    figure {
+      margin: 0;
+
+      img {
+        margin-inline: auto;
+      }
+    }
+  }
+}

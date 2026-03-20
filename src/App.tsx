@@ -3,6 +3,7 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./router.tsx";
 import { MDXProvider } from "@mdx-js/react";
 import "@/styles/App.css";
+import "@/styles/colors.css";
 import Card from "./components/Card.tsx";
 import Section from "./components/Section.tsx";
 import ModuleList from "./components/ModuleList.tsx";

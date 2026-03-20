@@ -1,0 +1,99 @@
+:root {
+  --page-bg: #efedf4;
+  --surface: #ffffff;
+  --surface-soft: #f7f7fc;
+  --text: #1f2446;
+  --muted: #707694;
+  --line: #ececf4;
+  --line-strong: #dde1f0;
+  --primary: #6270f3;
+  --primary-dark: #4959de;
+  --primary-soft: #f4f6ff;
+
+  --lady-lips-gradient: linear-gradient(
+    to top,
+    rgb(255, 154, 158, 0.6) 0%,
+    rgb(254, 207, 239, 0.6) 99%,
+    rgb(254, 207, 239, 0.6) 100%
+  );
+
+  --malibu-beach-gradient: linear-gradient(
+    to right,
+    rgb(79, 172, 254, 0.4) 0%,
+    rgb(0, 242, 254, 0.4) 100%
+  );
+
+  --lemon-gate-gradient: linear-gradient(
+    to top,
+    rgb(150, 251, 196, 0.6) 0%,
+    rgb(249, 245, 134, 0.6) 100%
+  );
+
+  --sunny-morning-gradient: linear-gradient(
+    200deg,
+    rgb(246, 211, 101, 0.4) 0%,
+    rgb(253, 160, 133, 0.4) 100%
+  );
+
+  --dusty-grass-gradient: linear-gradient(
+    120deg,
+    rgb(212, 252, 121, 0.6) 0%,
+    rgb(150, 230, 161, 0.6) 100%
+  );
+
+  --deep-blue-gradient: linear-gradient(
+    to right,
+    rgb(106, 17, 203, 0.3) 0%,
+    rgb(37, 117, 252, 0.3) 100%
+  );
+
+  --glass-pink:
+    radial-gradient(at 0% 0%, rgba(255, 192, 203, 0.6) 0%, transparent 75%),
+    rgba(254, 207, 239, 0.25);
+
+  --glass-yellow:
+    radial-gradient(at 0% 0%, rgba(255, 239, 184, 0.6) 0%, transparent 75%),
+    rgba(253, 160, 133, 0.2);
+
+  --glass-green:
+    radial-gradient(at 0% 0%, rgba(212, 252, 121, 0.6) 0%, transparent 75%),
+    rgba(150, 230, 161, 0.25);
+
+  --glass-blue:
+    radial-gradient(at 0% 0%, rgba(180, 230, 255, 0.6) 0%, transparent 75%),
+    rgba(0, 242, 254, 0.2);
+
+  --glass-purple:
+    radial-gradient(at 0% 0%, rgba(220, 210, 255, 0.6) 0%, transparent 75%),
+    rgba(106, 17, 203, 0.1);
+}
+
+.bg-glass {
+  backdrop-filter: blur(25px) saturate(160%);
+  -webkit-backdrop-filter: blur(25px) saturate(160%);
+  /* Structural Glass Properties */
+  border-radius: 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+
+  p {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  &.pink {
+    background: var(--glass-pink);
+  }
+  &.yellow {
+    background: var(--glass-yellow);
+  }
+  &.green {
+    background: var(--glass-green);
+  }
+  &.blue {
+    background: var(--glass-blue);
+  }
+  &.purple {
+    background: var(--glass-purple);
+  }
+}
