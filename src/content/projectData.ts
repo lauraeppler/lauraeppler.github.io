@@ -55,7 +55,7 @@ const ClimexData: Project = {
     context: 'Semesterprojekt im Studienfach "User Interface Design" an der Hochschule der Medien Stuttgart',
     role: "UX/UI Design, Recherche, Konzeption, Wireframing, Prototyping, Evaluation",
     period: "Sommersemester 2020",
-    tools: "Marvel, Adobe XD",
+    tools: "Marvel, Adobe XD, Adobe Illustrator",
   },
   images: ["bild3.jpg", "bild4.jpg"],
   link: "/projekt/Climex",
@@ -90,7 +90,7 @@ const FourWaysData: Project = {
     "Eine blickbasierte Smarthome-App zur Steuerung des Wohnumfelds für Menschen mit motorischen Einschränkungen",
   overview: {
     context: "BMBF-Forschungsprojekt in Kooperation mit dem Startup Treye Tech",
-    period: "",
+    period: "2023 - 2024",
     role: "Icon-Design",
     tools: "Adobe Illustrator",
   },
