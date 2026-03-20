@@ -8,16 +8,12 @@ Damit verbindet LocalMessenger digitale Teilhabe mit praktischer Entlastung im P
 
 Bereits 2021 wurde LocalMessenger als inklusives Projekt von Studierenden der Hochschule der Medien gemeinsam mit der Diakonie Kork entwickelt und in einem Probebetrieb evaluiert. Auf Basis des dabei gewonnenen Nutzerfeedbacks sollte die App weiterentwickelt und um zusätzliche Funktionen ergänzt werden.
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/i5dYum0WXRg?si=epzCCKVziTb4UfVW"
+<IFrameWrapper
+  id="youttube-player"
   title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
-></iframe>
+  src="https://www.youtube.com/embed/i5dYum0WXRg?si=epzCCKVziTb4UfVW"
+  video={true}
+/>
 
 </Section>
 <Section id="mein-beitrag" title="Mein Beitrag">
@@ -25,6 +21,7 @@ Bereits 2021 wurde LocalMessenger als inklusives Projekt von Studierenden der Ho
 Ich war für die konzeptionelle und gestalterische Weiterentwicklung der iOS-App verantwortlich. Auf Basis von Nutzerfeedback und neuen fachlichen Anforderungen entwickelte und visualisierte ich verständliche, rollenbasierte Nutzungskonzepte für die bestehende Anwendung.
 
 ### Design Herausforderungen
+
 - Bestehende Strukturen bewahren und gezielt erweitern
 - Neue Anforderungen in klare User Flows übersetzen
 - Klare Rollenlogik für Klient:innen und Assistierende schaffen
@@ -40,10 +37,15 @@ Ein zentraler Schwerpunkt des Projekts lag auf einer einfachen, verständlichen 
 Dafür galt es, komplexe Prozesse auf klare Interaktionsschritte zu reduzieren, Rollen und Ansichten eindeutig voneinander zu trennen und bekannte UI-Muster konsistent weiterzuführen. So entstand ein Nutzungskonzept, das Orientierung schafft und die Kommunikation zwischen beiden Seiten gezielt unterstützt.
 
 <div id="img-localmessenger-home">
-<figure>
-  <img src="/src/assets/projects/localmessenger/oldDesign/Anfrage.PNG" alt="" />
-  <figcaption><em>LocalMessenger iOS</em></figcaption>
-</figure>
+  <figure>
+    <img
+      src="/src/assets/projects/localmessenger/oldDesign/Anfrage.PNG"
+      alt=""
+    />
+    <figcaption>
+      <em>LocalMessenger iOS</em>
+    </figcaption>
+  </figure>
 </div>
 
 ### Vorgehen
@@ -55,7 +57,7 @@ Dafür galt es, komplexe Prozesse auf klare Interaktionsschritte zu reduzieren, 
 - Iterative Weiterentwicklung in Abstimmung mit der Diakonie Kork
 
 </Section>
-<Section id="prozesse" title="Konzipierte Funktionen & Prozesse"> 
+<Section id="prozesse" title="Konzipierte Funktionen & Prozesse">
 
 Im Rahmen der Weiterentwicklung wurden folgende Ansichten und Prozesse visualisiert und prototypisch umgesetzt:
 
@@ -67,15 +69,16 @@ Im Rahmen der Weiterentwicklung wurden folgende Ansichten und Prozesse visualisi
 - Profilansicht des Klienten bzw. der Klientin für Assistierende und Klient:innen
 - Bearbeitung der Screen zur Profilbearbeitung für Klient:innen
 
+### Prozessvisualieerung
 
-### Prozessvisualieerung 
 <div id="flow" class="xl-item">
-  <img src="/src/assets/projects/localmessenger/anfrage-stellen-flow.png" alt="Flow" />
+  <img
+    src="/src/assets/projects/localmessenger/anfrage-stellen-flow.png"
+    alt="Flow"
+  />
 </div>
 
 </Section>
-
-
 
 <Section id="ergebnis" title="Ergebnis">
 

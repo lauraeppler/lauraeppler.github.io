@@ -8,6 +8,10 @@
   --radius-sm: 10px;
 }
 
+html {
+  overflow: hidden; /* fixes weird overflow bug with prototype-iframes */
+}
+
 html,
 body,
 #root,
@@ -128,5 +132,30 @@ ol {
 
   & > img {
     width: 100%;
+  }
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #6f7cf6 0%, #5e6ef0 100%);
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(84, 101, 234, 0.22);
+  color: #ffffff;
+
+  /* because of mdx behavior sometimes the text for a button is in a <p> element */
+  & > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  & > p {
+    margin: 0;
+    color: inherit;
   }
 }

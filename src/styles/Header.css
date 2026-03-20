@@ -50,27 +50,6 @@
       }
     }
   }
-
-  li.lebenslauf-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 0 18px;
-    border-radius: 12px;
-    background: linear-gradient(180deg, #6f7cf6 0%, #5e6ef0 100%);
-    font-size: 0.95rem;
-    font-weight: 600;
-    box-shadow: 0 10px 24px rgba(84, 101, 234, 0.22);
-
-    &::after {
-      display: none;
-    }
-
-    & > a {
-      color: #ffffff;
-    }
-  }
 }
 
 @media (max-width: 700px) {
