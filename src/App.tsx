@@ -11,6 +11,8 @@ import Module from "./components/Module.tsx";
 import CardList from "./components/CardList.tsx";
 import Accordion from "./components/Accordion.tsx";
 import IFrameWrapper from "./components/IFrameWrapper.tsx";
+import ColumnsSection from "./components/ColumnsSection.tsx";
+import Column from "./components/Column.tsx";
 
 const isMaintenance = import.meta.env.VITE_REACT_APP_MAINTENANCE === "true";
 console.log(
@@ -26,6 +28,8 @@ const mdxComponents = {
   Module: Module,
   Accordion: Accordion,
   IFrameWrapper: IFrameWrapper,
+  ColumnsSection: ColumnsSection,
+  Column: Column,
 
   // Bonus: You can even hijack standard HTML tags!
   // h1: (props: any) => <h1 className="text-4xl text-blue-500" {...props} />,
