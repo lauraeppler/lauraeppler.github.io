@@ -109,7 +109,7 @@ const LocalMessengerData: Project = {
   overview: {
     context: "Forschungsprojekt in Kooperation mit der Diakonie Kork",
     role: "UX/UI Design, Interaktionslogik, Prototyping",
-    period: "??",
+    period: "2023",
     tools: "Adobe XD",
   },
   images: ["bild3.jpg", "bild4.jpg"],
@@ -127,7 +127,7 @@ const ShuffleData: Project = {
   overview: {
     context: "Forschungsprojekt SHUFFLE in Kooperation mit IAAP D-A-CH",
     role: "Konzeption, Kurs- & Prüfungsentwicklung, Projektleitung, Prüfungskoordination, Evaluation",
-    period: "??",
+    period: "2022 - 2025",
     tools: "",
   },
   images: ["bild1.jpg", "bild2.jpg"],
