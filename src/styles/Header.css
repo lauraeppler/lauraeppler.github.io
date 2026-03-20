@@ -10,7 +10,12 @@
 .main-header nav {
   grid-column: xlwrapper;
   a {
+    color: var(--text);
     text-decoration: none;
+  }
+
+  li.lebenslauf-link a {
+    color: #fff;
   }
 
   ul {
