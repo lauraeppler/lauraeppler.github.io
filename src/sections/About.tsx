@@ -1,4 +1,4 @@
-import "@/styles/About.css";
+import "@/styles/sections/About.css";
 
 const About = () => (
   <section className="about section-container xl-wrapper" id="about">

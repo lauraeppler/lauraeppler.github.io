@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "@/styles/Accordion.css";
+import "@/styles/components/Accordion.css";
 
 interface AccordionProps {
   title: string;
@@ -8,17 +8,29 @@ interface AccordionProps {
   alt?: string;
   children: React.ReactNode;
 }
-const Accordion = ({ title, children, img, alt = "", open = false }: AccordionProps) => {
+const Accordion = ({
+  title,
+  children,
+  img,
+  alt = "",
+  open = false,
+}: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(open);
 
   // Use onToggle instead of onClick on the summary.
   // onToggle fires when the details state changes natively.
-  const handleToggle = (event: React.SyntheticEvent<HTMLDetailsElement, Event>) => {
+  const handleToggle = (
+    event: React.SyntheticEvent<HTMLDetailsElement, Event>,
+  ) => {
     setIsOpen((event.target as HTMLDetailsElement).open);
   };
 
   return (
-    <details className="accordion-container card-basic" open={isOpen} onToggle={handleToggle}>
+    <details
+      className="accordion-container card-basic"
+      open={isOpen}
+      onToggle={handleToggle}
+    >
       <summary className="accordion-title">
         {img && (
           <div className="img-wrapper">

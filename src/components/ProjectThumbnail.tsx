@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "@/styles/ProjectThumbnail.css";
+import "@/styles/components/ProjectThumbnail.css";
 import { Project } from "@/types/Project";
 
 const ProjectThumbnail = ({ title, description, id, tags }: Project) => (

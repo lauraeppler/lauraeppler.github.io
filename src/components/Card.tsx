@@ -1,4 +1,4 @@
-import "@/styles/Card.css";
+import "@/styles/components/Card.css";
 
 interface CardProps {
   className?: string;
@@ -10,7 +10,8 @@ interface CardProps {
 
 const Card = ({ className = "", link, title, img, alt = "" }: CardProps) => {
   const isClickable = !!link;
-  const cardClasses = `card card-basic ${isClickable ? "card-animation" : ""} ${className}`.trim();
+  const cardClasses =
+    `card card-basic ${isClickable ? "card-animation" : ""} ${className}`.trim();
 
   return (
     <li className={cardClasses}>

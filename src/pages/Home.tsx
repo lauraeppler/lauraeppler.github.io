@@ -1,6 +1,6 @@
-import About from "@/components/About";
-import ProjectList from "@/components/ProjectList";
-import Contact from "@/components/Contact";
+import About from "@/sections/About";
+import ProjectList from "@/sections/ProjectList";
+import Contact from "@/sections/Contact";
 
 const Home = () => {
   return (

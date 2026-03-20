@@ -4,15 +4,15 @@ import { router } from "./router.tsx";
 import { MDXProvider } from "@mdx-js/react";
 import "@/styles/App.css";
 import "@/styles/colors.css";
-import Card from "./components/Card.tsx";
-import Section from "./components/Section.tsx";
-import ModuleList from "./components/ModuleList.tsx";
-import Module from "./components/Module.tsx";
-import CardList from "./components/CardList.tsx";
-import Accordion from "./components/Accordion.tsx";
-import IFrameWrapper from "./components/IFrameWrapper.tsx";
-import ColumnsSection from "./components/ColumnsSection.tsx";
-import Column from "./components/Column.tsx";
+import Card from "@/components/Card.tsx";
+import Section from "@/layout/Section.tsx";
+import ModuleList from "@/components/ModuleList.tsx";
+import Module from "@/components/Module.tsx";
+import CardList from "@/components/CardList.tsx";
+import Accordion from "@/components/Accordion.tsx";
+import IFrameWrapper from "@/components/IFrameWrapper.tsx";
+import ColumnsSection from "@/layout/ColumnsSection.tsx";
+import Column from "@/layout/Column.tsx";
 
 const isMaintenance = import.meta.env.VITE_REACT_APP_MAINTENANCE === "true";
 console.log(

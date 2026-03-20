@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useProjectData } from "@/hooks/useProjectData";
-import Hero from "@/components/Hero.tsx";
+import Hero from "@/sections/Hero.tsx";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -18,7 +18,11 @@ const ProjectDetail = () => {
 
   return (
     <>
-      <Hero title={project.title} details={project.details} overview={project.overview} />
+      <Hero
+        title={project.title}
+        details={project.details}
+        overview={project.overview}
+      />
       <MarkdownComponent />
     </>
   );

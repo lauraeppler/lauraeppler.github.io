@@ -1,4 +1,4 @@
-import "@/styles/Section.css";
+import "@/styles/layout/Section.css";
 
 interface SectionProps {
   key: string;
@@ -8,7 +8,12 @@ interface SectionProps {
   wrapperSize: "normal" | "xl";
 }
 
-const Section = ({ id, title, children, wrapperSize = "normal" }: SectionProps) => {
+const Section = ({
+  id,
+  title,
+  children,
+  wrapperSize = "normal",
+}: SectionProps) => {
   const wrapperClass = wrapperSize === "xl" ? "xl-wrapper" : "wrapper";
 
   return (

@@ -1,8 +1,8 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/sections/Header";
+import Footer from "@/sections/Footer";
 import { Outlet, useParams } from "react-router-dom";
-import "@/styles/Layout.css";
 import { useSmoothScrolling } from "@/hooks/useSmoothScrolling.ts";
+import "@/styles/layout/Layout.css";
 
 function Layout() {
   const { id } = useParams();

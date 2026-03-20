@@ -1,4 +1,4 @@
-import "@/styles/IFrameWrapper.css";
+import "@/styles/components/IFrameWrapper.css";
 import { useRef } from "react";
 
 interface IFrameWrapperProps {

@@ -1,5 +1,5 @@
-import "@/styles/Overview.css";
 import { ProjectOverview } from "@/types/Project.ts";
+import "@/styles/components/Overview.css";
 
 interface OverviewProps {
   overview: ProjectOverview;

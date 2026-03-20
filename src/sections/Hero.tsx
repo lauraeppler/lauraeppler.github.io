@@ -1,6 +1,6 @@
 import Overview from "@/components/Overview.tsx";
-import "@/styles/Hero.css";
 import { ProjectOverview } from "@/types/Project.ts";
+import "@/styles/sections/Hero.css";
 
 interface HeroProps {
   title: string;
