@@ -5,7 +5,12 @@
   position: relative;
   height: 50dvh;
   background:
-    linear-gradient(180deg, rgba(241, 242, 252, 0.94), rgba(247, 247, 252, 0.98)), var(--surface);
+    linear-gradient(
+      180deg,
+      rgba(241, 242, 252, 0.403),
+      rgba(247, 247, 252, 0.98)
+    ),
+    var(--surface);
   overflow: hidden;
   padding-top: 0;
 
@@ -17,21 +22,19 @@
     bottom: -5dvh;
     height: 110px;
     background: var(--surface);
-    clip-path: polygon(0 62%, 100% 28%, 100% 100%, 0 100%);
+    clip-path: polygon(0 62%, 100% 0%, 100% 100%, 0 100%);
   }
 
-  h1,
-  h2 {
+  h1 {
     margin: 0 0 24px;
     text-align: center;
     font-size: clamp(2.2rem, 3dvw, 3.2rem);
     line-height: 1.1;
-    letter-spacing: -0.03em;
-    color: var(--text);
+    letter-spacing: -0.01em;
+    color: var(--text-dark);
   }
 
   p {
-    position: relative;
     z-index: 1;
     margin: 0 auto;
     text-align: center;

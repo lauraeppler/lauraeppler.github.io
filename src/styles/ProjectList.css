@@ -8,7 +8,7 @@
     font-size: clamp(2rem, 2.8dvw, 3rem);
     line-height: 1.1;
     letter-spacing: -0.03em;
-    color: var(--text);
+    color: var(--text-dark);
   }
 
   .project-list {

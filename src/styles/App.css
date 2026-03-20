@@ -35,7 +35,7 @@ html {
 
 body {
   background: #ffffff;
-  color: var(--text);
+  color: var(--text-dark);
   font-family:
     Inter,
     ui-sans-serif,
@@ -53,15 +53,11 @@ img {
   display: block;
 }
 
-a {
-  color: inherit;
-}
-
 p,
 li {
   font-size: clamp(1rem, 1.02dvw, 1.12rem);
   line-height: 1.85;
-  color: var(--muted);
+  color: var(--text);
 }
 
 h2 {
@@ -69,8 +65,8 @@ h2 {
   text-align: center;
   font-size: clamp(2rem, 2.6dvw, 2.9rem);
   line-height: 1.1;
-  letter-spacing: -0.03em;
-  color: var(--text);
+  letter-spacing: -0.01em;
+  color: var(--text-dark);
   grid-column: wrapper;
 }
 
@@ -83,7 +79,7 @@ h3 {
 
 h4 {
   margin: 34px 0 14px;
-  color: var(--text);
+  color: var(--text-dark);
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -91,11 +87,11 @@ h4 {
 }
 
 strong {
-  color: var(--text);
+  color: var(--text-dark);
 }
 
 a {
-  color: var(--primary-dark);
+  color: inherit;
   text-decoration: none;
 
   &:hover {
@@ -142,7 +138,11 @@ ol {
   min-height: 44px;
   padding: 0 18px;
   border-radius: 12px;
-  background: linear-gradient(180deg, #6f7cf6 0%, #5e6ef0 100%);
+  background: linear-gradient(
+    180deg,
+    var(--primary) 0%,
+    var(--primary-dark) 100%
+  );
   font-size: 0.95rem;
   font-weight: 600;
   box-shadow: 0 10px 24px rgba(84, 101, 234, 0.22);
