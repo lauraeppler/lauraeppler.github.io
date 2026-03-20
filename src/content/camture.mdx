@@ -9,6 +9,7 @@ Versteckte und außergewöhnliche Orte in einer Stadt zu finden, kann mitunter s
 Als Teil eines vierköpfigen Teams war ich über den gesamten UX-Prozess hinweg an der Entwicklung von Camture beteiligt. Unser Vorgehen orientierte sich am Design-Thinking-Prozess und umfasste alle Phasen von der Recherche über die Konzeptentwicklung bis hin zur iterativen Ausarbeitung und Evaluation des Prototyps.
 
 Mein Schwerpunkt
+
 - Konzeption und Logik der App
 - Strukturierung zentraler Funktionen
 - Informationsarchitektur und Navigationslogik
@@ -17,54 +18,32 @@ Mein Schwerpunkt
 
 </Section>
 
-<Section id="design-thinking-process" title="Vorgehen und Aufgaben" wrapperSize="xl">
+<Section id="design-thinking-process" title="Vorgehen">
 
-<ModuleList>
-  <Module>
+<Accordion title="Empathize">
+  - Auseinandersetzung mit dem Nutzungskontext „Hidden Culture“ - Analyse von Nutzerbedürfnissen und
+  intrinsischen Motivationen - Ableitung eines Nutzerprofils in Form einer Persona
+</Accordion>
 
-    ### Empathize
-    - Auseinandersetzung mit dem Nutzungskontext „Hidden Culture“
-    - Analyse von Nutzerbedürfnissen und intrinsischen Motivationen
-    - Ableitung eines Nutzerprofils in Form einer Persona
+<Accordion title="Define">
+  - Durchführung einer Domänenanalyse - Marktanalyse bestehender Vergleichsanwendungen -
+  Formulierung des Problem Statements - Definition der konzeptionellen Lücke
+</Accordion>
 
-  </Module>
-  <Module>
+<Accordion title="Ideate">
+  - Ideenfindung durch Brainstorming und Scribbles - Entwicklung des App-Konzept CAMTURE -
+  Konzeption zentraler Funktionsbereiche
+</Accordion>
 
-    ### Define
-    - Durchführung einer Domänenanalyse
-    - Marktanalyse bestehender Vergleichsanwendungen
-    - Formulierung des Problem Statements
-    - Definition der konzeptionellen Lücke
+<Accordion title="Prototype">
+  - Erarbeitung der Informationsarchitektur und Navigationslogik - Entwicklung von Wireframes und
+  Mockups - Gestaltung eines interaktiven High-Fidelity-Prototyps in Figma
+</Accordion>
 
-  </Module>
-  <Module>
-
-    ### Ideate
-    - Ideenfindung durch Brainstorming und Scribbles
-    - Entwicklung des App-Konzept CAMTURE
-    - Konzeption zentraler Funktionsbereiche
-
-  </Module>
-  <Module>
-
-    ### Prototype
-
-    - Erarbeitung der Informationsarchitektur und Navigationslogik
-    - Entwicklung von Wireframes und Mockups
-    - Gestaltung eines interaktiven High-Fidelity-Prototyps in Figma
-
-  </Module>
-  <Module>
-
-    ### Test
-
-    - Benutzertests des interaktiven High-Fidelity-Prototyps
-    - Evaluation anhand von Use Cases und Think-Aloud
-    - Erhebung und Auswertung des UEQ-S
-    - Ableitung konkreter Optimierungspotenziale
-
-  </Module>
-</ModuleList>
+<Accordion title="Test">
+  - Benutzertests des interaktiven High-Fidelity-Prototyps - Evaluation anhand von Use Cases und
+  Think-Aloud - Erhebung und Auswertung des UEQ-S - Ableitung konkreter Optimierungspotenziale
+</Accordion>
 
 </Section>
 
@@ -81,6 +60,10 @@ Ein Konzept, das Exploration, fotografische Leidenschaft, soziale Bestätigung u
 </Section>
 
 <Section id="ausgangslage" title="Konzept - Camture">
+
+<div id="img-teo">
+  <img src="\src\assets\projects\camture\logo-camture.png" alt="Camture App-Icon" height="90px"/>
+</div>
 
 Camture macht Hidden Culture über standortbasierte Foto-Challenges erlebbar. Nutzende entdecken besondere Orte über Challenges, laden eigene Bilder hoch, voten Beiträge anderer und speichern interessante Orte für spätere Besuche auf ihrer Karte.
 
@@ -112,7 +95,7 @@ Camture macht Hidden Culture über standortbasierte Foto-Challenges erlebbar. Nu
 
 Die App war ursprünglich in Home, Karte und Profil gegliedert. Später wurde die Struktur geschärft, indem Challenge-Übersicht und Voting-Funktion in getrennte Bereiche überführt wurden. Dadurch konnten die Funktionen klarer voneinander abgegrenzt und der Home-Bereich entlastet werden.
 
-<div id="img-teo" class="xl-item">
+<div id="img-ia-camture" class="xl-item">
   <img src="/src/assets/projects/camture/ia.jpg" alt="Informationsarchitekur Camture" />
 </div>
 
@@ -126,7 +109,17 @@ Der interaktive High-Fidelity-Prototyp in Figma umfasste:
 - einen Voting-Bereich
 - eine interaktive Karte
 
-Exemplarisch wurde die Barock-Challenge vollständig ausgearbeitet, der Voting-Bereich für eine freie Challenge gestaltet und eine Navigationsübersicht für eine Challenge innerhalb der Karte umgesetzt. So ließ sich das Konzept im begrenzten Rahmen explorativ nutzen oder über konkrete Use Cases testen.
+Exemplarisch wurde die Gothik-Challenge vollständig ausgearbeitet, der Voting-Bereich für eine freie Challenge gestaltet und eine Navigationsübersicht für eine Challenge innerhalb der Karte umgesetzt. So ließ sich das Konzept im begrenzten Rahmen explorativ nutzen oder über konkrete Use Cases testen.
+
+<iframe
+  style={{ border: "1px solid rgba(0, 0, 0, 0.1);" }}
+  width="800"
+  height="450"
+  src="https://embed.figma.com/proto/A4JxLegim9JGIyusPq6nxQ/Mock-up-UXD---final?node-id=2-1262&p=f&viewport=724%2C174%2C0.16&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A1262&page-id=0%3A1&embed-host=share"
+  frameborder="0"
+  loading="lazy"
+  allowfullscreen
+></iframe>
 
 </Section>
 
@@ -135,6 +128,7 @@ Exemplarisch wurde die Barock-Challenge vollständig ausgearbeitet, der Voting-B
 Der Prototyp wurde mit **6 Testpersonen** evaluiert.
 
 Methoden
+
 - 4 Use Cases
 - Think-Aloud
 - User Experience Questionnaire Short (UEQ-S)

@@ -90,8 +90,8 @@ const FourWaysData: Project = {
     "Eine blickbasierte Smarthome-App zur Steuerung des Wohnumfelds für Menschen mit motorischen Einschränkungen",
   overview: {
     context: "BMBF-Forschungsprojekt in Kooperation mit dem Startup Treye Tech",
-    period: "??",
-    role: "Icon Design",
+    period: "",
+    role: "Icon-Design",
     tools: "Adobe Illustrator",
   },
   images: ["bild5.jpg", "bild6.jpg"],

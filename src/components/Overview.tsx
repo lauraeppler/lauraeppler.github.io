@@ -18,10 +18,12 @@ const Overview = ({ overview, className }: OverviewProps) => {
           <dt>Rolle</dt>
           <dd>{overview.role}</dd>
         </div>
-        <div className="overview-item">
-          <dt>Zeitraum</dt>
-          <dd>{overview.period}</dd>
-        </div>
+        {overview.period && (
+          <div className="overview-item">
+            <dt>Zeitraum</dt>
+            <dd>{overview.period}</dd>
+          </div>
+        )}
         {overview.tools && (
           <div className="overview-item">
             <dt>Tools</dt> <dd>{overview.tools}</dd>
