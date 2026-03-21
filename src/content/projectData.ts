@@ -59,7 +59,7 @@ const ClimexData: Project = {
   },
   images: ["bild3.jpg", "bild4.jpg"],
   link: "/projekt/Climex",
-  tags: ["UX/UI Design", "Informationsarchitektur", "Mobile App", "Serious Game", "Studienprojekt"],
+  tags: ["UX/UI Design", "Mobile App", "Serious Game", "Studienprojekt"],
 };
 
 const EatMoveData: Project = {
