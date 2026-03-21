@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: var(--breakpoint)) {
   .overview-layout .overview-details {
     padding: 22px;
     border-radius: 18px;

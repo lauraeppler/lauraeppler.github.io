@@ -16,3 +16,7 @@
   clip: auto;
   z-index: 100;
 }
+
+.skip-link-target {
+  display: none;
+}
