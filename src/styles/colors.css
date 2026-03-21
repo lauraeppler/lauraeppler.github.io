@@ -10,6 +10,14 @@
   --primary-dark: #4959de;
   --primary-soft: #f4f6ff;
 
+  --light-grey-bg:
+    linear-gradient(
+      180deg,
+      rgba(241, 242, 252, 0.403),
+      rgba(247, 247, 252, 0.98)
+    ),
+    var(--surface);
+
   --lady-lips-gradient: linear-gradient(
     to top,
     rgb(255, 154, 158, 0.6) 0%,

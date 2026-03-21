@@ -5,27 +5,4 @@
     font-size: clamp(1.3rem, 1.7dvw, 1.8rem);
     line-height: 1.25;
   }
-
-  & > ul {
-    list-style: none;
-    display: grid;
-    align-items: center;
-    row-gap: 1.2em;
-
-    & > li {
-      position: relative;
-      line-height: 1.7;
-
-      &::before {
-        content: "";
-        background: no-repeat center/100% url("./../assets/icons/kommentar-check.svg");
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 25px;
-        aspect-ratio: 1;
-        left: -38px;
-      }
-    }
-  }
 }

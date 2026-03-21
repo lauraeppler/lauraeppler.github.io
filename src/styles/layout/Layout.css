@@ -1,7 +1,7 @@
 .layout {
   --padding: 2em;
-  --wrapper-width: 680px;
-  --xl-wrapper: 1280px;
+  --wrapper-width: 37.5rem;
+  --xl-wrapper: 80rem;
   --xl-wrapper-wings: calc((var(--xl-wrapper) - var(--wrapper-width)) / 2);
 
   display: grid;
@@ -54,6 +54,6 @@
 
   .main-scroll-container {
     align-self: stretch;
-    row-gap: 4em;
+    /* TODO: section abstand hier */
   }
 }

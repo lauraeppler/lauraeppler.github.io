@@ -1,0 +1,109 @@
+/* TODO: make responsive */
+:root {
+  --h1-font-size: 2.636rem;
+  --h2-font-size: 2.182rem;
+  --h3-font-size: 1.591rem;
+  --h4-font-size: 1.364rem;
+  --body-font-size: 1rem;
+
+  --h3-line-height: 1.4;
+  --h1-line-height: 1.4;
+  --h4-line-height: 1.4;
+  --h2-line-height: 1.4;
+  --body-line-height: 2.22;
+}
+
+html {
+  font-size: 22px; /* base for rem, needs to by px */
+  line-height: var(--body-line-height);
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+p > a,
+p > strong {
+  color: var(--text-dark);
+  font-weight: 700;
+  /* font-size: clamp(2rem, 2.6dvw, 2.9rem); */
+  /* line-height: 1.1; */
+  /* letter-spacing: -0.01em; */
+}
+
+.heading-1 {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  margin-block: var(--h1-margin);
+}
+
+.heading-2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  margin-block: var(--h2-margin);
+  text-align: center;
+}
+
+.heading-3 {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  margin-block: var(--h3-margin);
+  color: var(--primary);
+}
+
+.heading-4 {
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  margin-block: var(--h4-margin);
+}
+
+.body {
+  font-size: var(--body-font-size);
+  margin-block: var(--body-margin-top) var(--body-margin-bottom);
+}
+
+h3 {
+  /* font-size: clamp(1.3rem, 1.7dvw, 1.8rem); */
+  /* line-height: 1.25; */
+}
+
+.list {
+  padding-left: 3rem;
+  display: grid;
+  margin-inline: auto;
+  list-style: none;
+  align-items: center;
+  row-gap: 1em;
+
+  & > li {
+    position: relative;
+    line-height: 1.7;
+
+    &::before {
+      content: "";
+      background: no-repeat center/100%
+        url("./../assets/icons/kommentar-check.svg");
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 25px;
+      aspect-ratio: 1;
+      left: -2.5em;
+    }
+  }
+}
+
+p,
+li {
+  /* font-size: clamp(1rem, 1.02dvw, 1.12rem); */
+  /* line-height: 1.85; */
+  /* font-size: var(--body-font-size); */
+}
+
+p > a {
+  color: var(--primary-dark);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

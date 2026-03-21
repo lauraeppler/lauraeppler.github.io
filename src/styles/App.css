@@ -53,56 +53,6 @@ img {
   display: block;
 }
 
-p,
-li {
-  font-size: clamp(1rem, 1.02dvw, 1.12rem);
-  line-height: 1.85;
-  color: var(--text);
-}
-
-h2 {
-  margin: 0 0 28px;
-  text-align: center;
-  font-size: clamp(2rem, 2.6dvw, 2.9rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  color: var(--text-dark);
-  grid-column: wrapper;
-}
-
-h3 {
-  margin: 0 0 16px;
-  color: var(--primary);
-  font-size: clamp(1.3rem, 1.7dvw, 1.8rem);
-  line-height: 1.25;
-}
-
-h4 {
-  margin: 34px 0 14px;
-  color: var(--text-dark);
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-strong {
-  color: var(--text-dark);
-}
-
-a {
-  color: var(--primary-dark);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-ol {
-  padding-left: 1.25rem;
-}
-
 .card-basic {
   box-shadow: var(--shadow-card);
   border: 1px solid var(--line);

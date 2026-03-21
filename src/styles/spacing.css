@@ -1,0 +1,11 @@
+/* TODO: make responsive */
+:root {
+  --h1-margin: 1.591rem;
+  --h2-margin: 2.045rem;
+  --h3-margin: 1.818rem;
+  --h4-margin: 1.545rem;
+  --body-margin-top: 0;
+  --body-margin-bottom: 2.591rem;
+  --section-padding: 3.545rem;
+  --double-section-padding: 5.636rem;
+}

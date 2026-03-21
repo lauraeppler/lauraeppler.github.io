@@ -13,7 +13,7 @@ const Hero = ({ title, details, overview }: HeroProps) => {
     <section className="hero-section">
       <div className="hero-wrapper">
         <div className="project-hero">
-          <h1>{title}</h1>
+          <h1 className="heading-1">{title}</h1>
           <p className="project-subtitle">{details}</p>
         </div>
         <Overview className="project-overview" overview={overview} />

@@ -48,7 +48,7 @@
   }
 
   .project-overview {
-    flex: 1 1 min(450px, 100%);
+    flex: 1 1 min(25rem, 100%);
   }
 }
 

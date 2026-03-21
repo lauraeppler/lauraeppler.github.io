@@ -1,6 +1,5 @@
 .column-child-container {
   display: grid;
   align-content: start;
-  row-gap: 1em;
   max-width: 680px;
 }

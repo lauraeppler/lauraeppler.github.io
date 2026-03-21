@@ -1,4 +1,5 @@
 .columns-section-container {
+  padding-block: var(--section-padding);
   display: grid;
   justify-items: center;
   align-items: center;

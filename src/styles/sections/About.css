@@ -4,13 +4,7 @@
   align-content: center;
   position: relative;
   height: 50dvh;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(241, 242, 252, 0.403),
-      rgba(247, 247, 252, 0.98)
-    ),
-    var(--surface);
+  background: var(--light-grey-bg);
   overflow: hidden;
   padding-top: 0;
 

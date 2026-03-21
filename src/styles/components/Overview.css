@@ -10,9 +10,9 @@
 
     .overview-item {
       display: grid;
-      grid-template-columns: 78px 1fr;
-      gap: 10px 16px;
-      padding: 16px 0;
+      grid-template-columns: minmax(100px, 140px) minmax(200px, 1fr);
+      gap: 0.5rem 0.727rem;
+      padding: 0.727rem 0;
       border-bottom: 1px solid var(--line);
 
       dt {
@@ -39,13 +39,13 @@
 }
 
 @media (max-width: 900px) {
-  .overview-details {
+  .overview-layout .overview-details {
     padding: 22px;
     border-radius: 18px;
 
     .overview-item {
       grid-template-columns: 1fr;
-      gap: 6px;
+      gap: 0.273rem;
     }
   }
 }
