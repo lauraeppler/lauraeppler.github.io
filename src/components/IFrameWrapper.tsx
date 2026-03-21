@@ -41,8 +41,8 @@ const IFrameWrapper = ({
 
       <iframe
         id={id}
-        width={video ? 560 : 452}
-        height={video ? 315 : 881}
+        width={video ? 700 : 452}
+        height={video ? 394 : 881}
         src={src}
         title={title}
         allow={

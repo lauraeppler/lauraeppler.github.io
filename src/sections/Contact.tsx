@@ -5,11 +5,9 @@ const Contact = () => (
     <h2>Kontakt</h2>
     <p>
       Du möchtest mehr über meine Arbeit erfahren, hast Fragen zu meinen
-      Projekten oder möchtest dich einfach austauschen? Dann freue ich mich auf
-      deine Nachricht.
+      Projekten oder möchtest dich einfach austauschen?
+      Dann freue ich mich auf deine Nachricht.
     </p>
-
-    <h3>Get in touch / Lass uns vernetzen</h3>
 
     <a
       href="mailto:lauraeppler@web.de"
@@ -30,9 +28,7 @@ const Contact = () => (
 
     <div>
       <p>
-        <strong>Hinweis:</strong> Dieses Portfolio ist derzeit noch nicht
-        vollständig barrierefrei. Diese befindet sich noch am Entwicklungsstand
-        und wird kontinuerlich verbessert.
+        <strong>Hinweis:</strong> Dieses Portfolio befindet sich aktuell im Entwicklungsstand und ist noch nicht vollständig barrierefrei.
       </p>
     </div>
   </section>
