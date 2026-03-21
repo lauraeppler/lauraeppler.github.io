@@ -1,6 +1,6 @@
 .layout {
   --padding: 2em;
-  --wrapper-width: 37.5rem;
+  --wrapper-width: 39rem;
   --xl-wrapper: 1280px;
   --xl-wrapper-wings: calc((var(--xl-wrapper) - var(--wrapper-width)) / 2);
 

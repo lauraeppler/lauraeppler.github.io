@@ -37,7 +37,7 @@ const Accordion = ({
             <img src={img} alt={alt} loading="lazy" />
           </div>
         )}
-        {title}
+        <h3 className="heading-h3">{title}</h3>
       </summary>
       <div className="accordion-content">{children}</div>
     </details>
