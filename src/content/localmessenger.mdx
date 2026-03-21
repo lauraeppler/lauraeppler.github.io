@@ -2,26 +2,44 @@ import "@/styles/projects/LocalMessenger.css";
 
 <Section id="projektziel" title="Projektziel">
 
+<ColumnsSection className="projektziel-localmessenger-columns">
+
+<Column>
 In der ambulanten Betreuung werden Unterstützungsbedarfe oft spontan, mündlich oder nur unzureichend dokumentiert kommuniziert. Das erschwert die Planung im Arbeitsalltag, erhöht den Dokumentationsaufwand und reduziert die Transparenz für Klient:innen und Assistierende.
 
 Hier setzt **LocalMessenger** an: Die App ermöglicht es Menschen mit Unterstützungsbedarf, ihre Anliegen einfach, verständlich und selbstbestimmt digital an Assistierende zu übermitteln. Gleichzeitig trägt sie dazu bei, administrative Abläufe zu vereinfachen, Anfragen nachvollziehbar zu dokumentieren und die Bearbeitung im Betreuungsalltag einfacher zu bündeln. So verbindet LocalMessenger **digitale Teilhabe mit praktischer Entlastung im Pflege- und Betreuungskontext**.
 
 Ziel des Projekts war die **konzeptionelle Weiterentwicklung der App**, die bereits 2021 von Studierenden der Hochschule der Medien gemeinsam mit der Diakonie Kork entwickelt und in einem Probebetrieb evaluiert wurde.
+</Column>
 
 <IFrameWrapper
-  id="youttube-player"
-  title="YouTube video player"
+  id="youtube-player"
+  title="YouTube-Player LocalMessenger App"
   src="https://www.youtube.com/embed/i5dYum0WXRg?si=epzCCKVziTb4UfVW"
   video={true}
 />
+</ColumnsSection>
 
 </Section>
 <Section id="mein-beitrag" title="Mein Beitrag">
 
 Ich war für die **konzeptionelle und gestalterische Weiterentwicklung der iOS-App** verantwortlich. Auf Basis des Nutzerfeedbacks aus dem Probebetrieb sowie neuer fachlichen Anforderungen entwickelte ich verständliche, rollenbasierte Nutzungskonzepte und überführte diese in visuell nachvollziehbare Prozesse und Screenkonzepte.
 
-<ColumnsSection className="mein-beitrag-columns">
+<ColumnsSection className="beitrag-localmessenger-columns">
 
+<Column>
+<div id="img-localmessenger-home">
+  <figure>
+    <img
+      src="/src/assets/projects/localmessenger/oldDesign/Anfrage.PNG"
+      alt="Anfrageübersicht der LocalMessenger-App"
+    />
+    <figcaption>
+      <em>LocalMessenger iOS-App</em>
+    </figcaption>
+  </figure>
+</div>
+</Column>
 <Column>
 
 ### Design Herausforderungen
@@ -39,19 +57,6 @@ Ein **zentraler Schwerpunkt** lag auf einer **einfachen, verständlichen und bar
 
 Dafür galt es, komplexe Prozesse auf klare Interaktionsschritte zu reduzieren, Rollen und Ansichten eindeutig voneinander zu trennen und bekannte UI-Muster konsistent weiterzuführen. So entstand ein Nutzungskonzept, das Orientierung schafft und die Kommunikation zwischen beiden Seiten gezielt unterstützt.
 
-</Column>
-<Column>
-<div id="img-localmessenger-home">
-  <figure>
-    <img
-      src="/src/assets/projects/localmessenger/oldDesign/Anfrage.PNG"
-      alt="Screenshot der LocalMessenger-App"
-    />
-    <figcaption>
-      <em>LocalMessenger iOS</em>
-    </figcaption>
-  </figure>
-</div>
 </Column>
 
 </ColumnsSection>
@@ -73,13 +78,13 @@ Dafür galt es, komplexe Prozesse auf klare Interaktionsschritte zu reduzieren, 
 
 Im Rahmen der Weiterentwicklung wurden **folgende zentrale Funktionen und Abläufe** der App konzeptionell überarbeitet und prototypisch visualisiert:
 
-- das Stellen und Verwalten von Anfragen
-- eine Chatfunktion für die Kommunikation zwischen Klient:innen und Assistierenden
-- eine Benachrichtigungsanzeige
-- ein Dokumentationssystem für Assistierende inklusive Abbuchungsprozess
-- Filterfunktionen für die Auftragsübersicht
-- Profilansicht für Klient:innen und Assistierende
-- Bearbeitungsansichten für Profildaten auf Klient:innen
+- das Stellen und Verwalten von **Anfragen**
+- eine **Chatfunktion** für die Kommunikation zwischen Klient:innen und Assistierenden
+- eine **Benachrichtigungsanzeige**
+- ein **Dokumentationssystem** für Assistierende inklusive Abbuchungsprozess
+- **Filterfunktionen** für die Auftragsübersicht
+- **Profilansicht** für Klient:innen und Assistierende
+- **Bearbeitungsansicht für Profildaten** auf Klient:innen
 
 Im Mittelpunkt stand dabei nicht die detailgetreue Ausarbeitung des bestehenden Designs, sondern die Frage, wie sich bestehende und neue Prozesse verständlich, klar und handlungsorientiert abbilden lassen.
 
@@ -103,10 +108,10 @@ Anschließend wurde der Ablauf prototypisch in **Adobe XD** umgesetzt.
   <figure>
     <img
       src="/src/assets/projects/localmessenger/anfrage-stellen-screens.png"
-      alt="UI-Screens für Klient und Assistierende in Adobe XD"
+      alt="UI-Screens zum Stellen und Verwalten einer Anfrage in Adobe XD"
     />
     <figcaption>
-      Prototyp mit klarer Rollenlogik: Stellen und Verwalten einer Anfrage
+      UI-Screens mit klarer Rollenlogik: Stellen und Verwalten einer Anfrage
     </figcaption>
   </figure>
 </div>
@@ -122,14 +127,11 @@ Anschließend wurde der Ablauf prototypisch in **Adobe XD** umgesetzt.
 
 Ein weiterer Fokus lag auf dem **Prozess zur Dokumentation und Abbuchung von Fachleistungsstunden** innerhalb der App. Dieser Prozess wurde prototypisch in **Adobe XD** umgesetzt.
 
-<iframe
-  width="390"
-  height="844"
+<IFrameWrapper
+  id="iframe-localmessenger"
+  title="Low Fidelity Prototyp iframe"
   src="https://xd.adobe.com/embed/a66d4c65-c81d-4669-9df7-5a5eda3d93c2-f33e/?fullscreen"
-  frameborder="0"
-  allowfullscreen
-  loading="lazy"
-></iframe>
+/>
 
 </Section>
 

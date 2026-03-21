@@ -87,7 +87,7 @@ const FourWaysData: Project = {
   title: "FourWays - Smarthome App",
   description: "Eine blickbasierte Smarthome-App für Menschen mit Bewegungseinschränkungen",
   details:
-    "Eine blickbasierte Smarthome-App zur Steuerung des Wohnumfelds für Menschen mit motorischen Einschränkungen",
+    "Eine blickbasierte Smarthome-App zur Steuerung des Wohnumfelds für Menschen mit motorischen Einschränkungen.",
   overview: {
     context: "BMBF-Forschungsprojekt in Kooperation mit dem Startup Treye Tech",
     period: "2023 - 2024",
@@ -105,7 +105,7 @@ const LocalMessengerData: Project = {
   title: "Local Messenger",
   description: "Eine App zur Unterstützungsvermittlung in ambulanten Wohnformen",
   details:
-    "Eine App zur schnellen und einfachen Kommunikation zwischen Menschen mit Unterstützungsbedarf und Assistierenden der ambulanten Betreuung und Pflege",
+    "Eine App zur schnellen und einfachen Kommunikation zwischen Menschen mit Unterstützungsbedarf und Assistierenden der ambulanten Betreuung und Pflege.",
   overview: {
     context: "Forschungsprojekt in Kooperation mit der Diakonie Kork",
     role: "UX/UI Design, Interaktionslogik, Prototyping",
