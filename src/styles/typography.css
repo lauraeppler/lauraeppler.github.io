@@ -1,10 +1,10 @@
 /* TODO: make responsive */
 :root {
-  --h1-font-size: 2.636rem;
-  --h2-font-size: 2.182rem;
-  --h3-font-size: 1.591rem;
-  --h4-font-size: 1.364rem;
-  --body-font-size: 1rem;
+  --h1-font-size: clamp(2rem, 5dvw, 2.636rem);
+  --h2-font-size: clamp(1.2rem, 3.5dvw, 2.182rem);
+  --h3-font-size: clamp(1rem, 2.5dvw, 1.591rem);
+  --h4-font-size: clamp(0.9rem, 2.3dvw, 1.364rem);
+  --body-font-size: clamp(0.727rem, 1.5dvw, 1.364rem);
 
   --h3-line-height: 1.4;
   --h1-line-height: 1.4;
@@ -21,26 +21,32 @@ html {
 .heading-1,
 .heading-2,
 .heading-3,
-p > a,
-p > strong {
+.heading-4,
+.body > a,
+.body > strong {
+  text-align: center;
   color: var(--text-dark);
   font-weight: 700;
-  /* font-size: clamp(2rem, 2.6dvw, 2.9rem); */
-  /* line-height: 1.1; */
-  /* letter-spacing: -0.01em; */
 }
 
 .heading-1 {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
-  margin-block: var(--h1-margin);
+  margin-block: 0 var(--h1-margin);
+
+  &:first-child() {
+    margin-block: var(--h1-margin);
+  }
 }
 
 .heading-2 {
   font-size: var(--h2-font-size);
   line-height: var(--h2-line-height);
-  margin-block: var(--h2-margin);
-  text-align: center;
+  margin-block: 0 var(--h2-margin);
+
+  &:first-child {
+    margin-block: var(--h2-margin);
+  }
 }
 
 .heading-3 {
@@ -53,21 +59,21 @@ p > strong {
 .heading-4 {
   font-size: var(--h4-font-size);
   line-height: var(--h4-line-height);
-  margin-block: var(--h4-margin);
+  margin-block: 0 var(--h4-margin);
+}
+
+p.body:last-child {
+  margin-block: 0;
 }
 
 .body {
   font-size: var(--body-font-size);
-  margin-block: var(--body-margin-top) var(--body-margin-bottom);
-}
-
-h3 {
-  /* font-size: clamp(1.3rem, 1.7dvw, 1.8rem); */
-  /* line-height: 1.25; */
+  margin-block: 0 var(--body-margin-bottom);
 }
 
 .list {
   padding-left: 3rem;
+  margin-block: 0 var(--list-margin-bottom);
   display: grid;
   margin-inline: auto;
   list-style: none;
@@ -90,13 +96,6 @@ h3 {
       left: -2.5em;
     }
   }
-}
-
-p,
-li {
-  /* font-size: clamp(1rem, 1.02dvw, 1.12rem); */
-  /* line-height: 1.85; */
-  /* font-size: var(--body-font-size); */
 }
 
 p > a {

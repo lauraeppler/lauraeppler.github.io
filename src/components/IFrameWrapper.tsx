@@ -23,10 +23,12 @@ const IFrameWrapper = ({
     e.preventDefault();
 
     if (targetRef.current) {
+      targetRef.current.style.display = "block";
       // Force the keyboard focus to move to the div
       targetRef.current.focus();
       // Smoothly scroll the screen to the target
       targetRef.current.scrollIntoView({ behavior: "smooth" });
+      targetRef.current.style.display = "none";
     }
   };
   return (
@@ -56,7 +58,12 @@ const IFrameWrapper = ({
         style={{ WebkitClipPath: "inset(2px 2px)", clipPath: "inset(2px 2px)" }}
       ></iframe>
 
-      <div ref={targetRef} id={jumpLink} tabIndex={-1}></div>
+      <div
+        ref={targetRef}
+        className="skip-link-target"
+        id={jumpLink}
+        tabIndex={-1}
+      ></div>
     </>
   );
 };

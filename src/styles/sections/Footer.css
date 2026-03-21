@@ -13,7 +13,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: var(--breakpoint)) {
   .footer {
     padding: 18px 20px;
   }

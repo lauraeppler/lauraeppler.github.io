@@ -27,7 +27,7 @@
   .project-hero {
     color: #ffffff;
     text-align: left;
-    flex: 1 1 min(600px, 100%);
+    flex: 1 1 min(20rem, 100%);
 
     h1 {
       max-width: 100%;
@@ -48,11 +48,11 @@
   }
 
   .project-overview {
-    flex: 1 1 min(25rem, 100%);
+    flex: 1 1 min(15rem, 100%);
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: var(--breakpoint)) {
   .hero-section {
     padding: 3em 0 0;
     min-height: auto;
