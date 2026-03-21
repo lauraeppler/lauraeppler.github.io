@@ -1,13 +1,18 @@
 import "@/styles/layout/ColumnsSection.css";
 
 interface ColumnsSectionProps {
+  layout?: "half-half" | "one-two" | "two-one";
+  gap?: string;
   children: React.ReactNode;
-  gap: string;
   className?: string;
 }
-const ColumnsSection = ({ children, className = "" }: ColumnsSectionProps) => {
+const ColumnsSection = ({
+  children,
+  layout = "half-half",
+  className = "",
+}: ColumnsSectionProps) => {
   return (
-    <div className={`columns-section-container xl-item ${className}`}>
+    <div className={`columns-section-container xl-item ${layout} ${className}`}>
       {children}
     </div>
   );
