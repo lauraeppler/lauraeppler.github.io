@@ -1,0 +1,30 @@
+#camture {
+  .designprocess-camture-column {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    & > .screens {
+      flex: 0 1 calc(33.333% - 0.75rem);
+      display: flex;
+      justify-content: center;
+
+      & > img {
+        height: 80dvh;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .designprocess-camture-column {
+      & > .screens {
+        flex: 0 1 100%;
+      }
+    }
+  }
+}
