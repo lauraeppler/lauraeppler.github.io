@@ -144,3 +144,20 @@ figcaption {
     z-index: -1;
   }
 }
+
+.smartphone {
+  height: 80dvh;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-card);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 10px solid var(--text-dark);
+    border-radius: 40px;
+    pointer-events: none;
+  }
+}

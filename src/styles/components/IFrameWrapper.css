@@ -20,3 +20,16 @@
 .skip-link-target {
   display: none;
 }
+
+.iframe-wrapper iframe {
+  webkit-clip-path: inset(2px 2px);
+  clip-path: inset(2px 2px);
+}
+
+.iframe-wrapper.prototype {
+  height: 80dvh; /* needed for iframe to grow to full-height size */
+}
+
+.iframe-wrapper.video {
+  width: 100%;
+}

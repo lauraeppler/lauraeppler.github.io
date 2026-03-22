@@ -45,9 +45,5 @@
 @media (max-width: 900px) {
   #about {
     padding-block: 3rem 4rem;
-
-    /* &::after {
-      clip-path: polygon(0 68%, 100% 34%, 100% 100%, 0 100%);
-    */
   }
 }

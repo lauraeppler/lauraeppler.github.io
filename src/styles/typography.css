@@ -66,10 +66,6 @@ body {
   margin-block: 0 var(--h4-margin);
 }
 
-/* p.body:last-child {
-  margin-block: 0;
-} */
-
 .body {
   font-size: var(--body-font-size);
   margin-block: 0 var(--body-margin-bottom);

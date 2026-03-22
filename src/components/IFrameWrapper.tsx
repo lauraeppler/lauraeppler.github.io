@@ -7,6 +7,9 @@ interface IFrameWrapperProps {
   src: string;
   allowFullScreen?: boolean;
   video?: boolean;
+  height?: string;
+  showSmartphone?: boolean;
+  aspectRatio?: string;
 }
 
 const IFrameWrapper = ({
@@ -15,6 +18,9 @@ const IFrameWrapper = ({
   src,
   allowFullScreen = true,
   video = false,
+  height = "100%",
+  showSmartphone = true,
+  aspectRatio = "normal",
 }: IFrameWrapperProps) => {
   const jumpLink = `after-iframe-${id}`;
   const targetRef = useRef<HTMLDivElement>(null);
@@ -31,6 +37,24 @@ const IFrameWrapper = ({
       targetRef.current.style.display = "none";
     }
   };
+
+  const videoProps = {
+    style: {
+      aspectRatio: `${video ? "16 / 9" : aspectRatio}`,
+    },
+    className: "iframe-wrapper video",
+  };
+
+  const prototypeProps = {
+    style: {
+      maxHeight: `min(${height}, 70dvh)`,
+      aspectRatio: aspectRatio,
+    },
+    className: `iframe-wrapper prototype ${showSmartphone ? "smartphone" : ""}`,
+  };
+
+  const iframeWrapperProps = video ? videoProps : prototypeProps;
+
   return (
     <>
       <button
@@ -41,22 +65,23 @@ const IFrameWrapper = ({
         Skip {video ? "Video-player" : "Prototype"}
       </button>
 
-      <iframe
-        id={id}
-        width={video ? 700 : 359}
-        height={video ? 394 : 700}
-        src={src}
-        title={title}
-        allow={
-          video
-            ? `accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share}
+      <div {...iframeWrapperProps}>
+        <iframe
+          id={id}
+          width="100%"
+          height="100%"
+          src={src}
+          title={title}
+          allow={
+            video
+              ? `accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share}
         referrerPolicy="strict-origin-when-cross-origin`
-            : ""
-        }
-        allowFullScreen={allowFullScreen}
-        loading="lazy"
-        style={{ WebkitClipPath: "inset(2px 2px)", clipPath: "inset(2px 2px)" }}
-      ></iframe>
+              : ""
+          }
+          allowFullScreen={allowFullScreen}
+          loading="lazy"
+        ></iframe>
+      </div>
 
       <div
         ref={targetRef}
