@@ -80,6 +80,12 @@ img {
   }
 }
 
+.img-screenshot img {
+  height: 75dvh;
+  width: auto;
+}
+
+
 figcaption {
   font-style: italic;
   line-height: 1.5;
