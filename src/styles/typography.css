@@ -90,7 +90,7 @@ p.body:last-child {
     &::before {
       content: "";
       background: no-repeat center/100%
-        url("./../assets/icons/kommentar-check.svg");
+        url("./../../public/icons/kommentar-check.svg");
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
