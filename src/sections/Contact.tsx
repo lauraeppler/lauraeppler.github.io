@@ -26,7 +26,7 @@ const Contact = () => (
         title="Icons made by Smashicons from www.flaticon.com"
       >
         <img
-          src="/icons/linkedin.png"
+          src="/icons/linkedin.svg"
           alt="LinkedIn"
           className="contact-icon"
         />
@@ -37,7 +37,6 @@ const Contact = () => (
       <strong>Hinweis:</strong> Dieses Portfolio befindet sich aktuell im
       Entwicklungsstand und ist noch nicht vollständig barrierefrei.
     </p>
-
   </section>
 );
 

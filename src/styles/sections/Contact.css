@@ -24,6 +24,23 @@
     ) !important;
   }
 
-  .contact-link {
+  .contact-link-list {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: calc(var(--body-margin-bottom) + 0.5rem);
+
+    .contact-link {
+      flex: 0 0 60px;
+      transition: transform 0.18s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
