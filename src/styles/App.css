@@ -85,15 +85,13 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  padding: 0 18px;
-  border-radius: 12px;
+  padding: 0.2rem 1rem;
+  border-radius: 0.667rem;
   background: linear-gradient(
     180deg,
     var(--primary) 0%,
     var(--primary-dark) 100%
   );
-  font-size: 0.95rem;
   font-weight: 600;
   box-shadow: 0 10px 24px rgba(84, 101, 234, 0.22);
   color: #ffffff;
