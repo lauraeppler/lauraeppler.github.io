@@ -27,18 +27,6 @@
     grid-auto-rows: max-content; /* sections should not stretch to fit whole height of page */
     grid-column: fullwidth;
 
-    /* This will set the children width to normal wrapper */
-    /* use on container, where all children will have the same width */
-    &.wrapper > * {
-      grid-column: wrapper;
-    }
-
-    /* This will set the children width to xl-wrapper */
-    /* use on container, where all children will have the same width */
-    &.xl-wrapper > * {
-      grid-column: xlwrapper;
-    }
-
     /* This will set of the element width to the xl-wrapper */
     /* use on single element */
     .xl-item {
@@ -49,11 +37,24 @@
   main {
     /* makes footer stick to the bottom of scroll-container */
     grid-template-rows: 1fr auto;
-    overflow-y: auto;
+    overflow: hidden auto;
   }
 
   .main-scroll-container {
     align-self: stretch;
+
     /* TODO: section abstand hier */
+  }
+
+  /* This will set the children width to normal wrapper */
+  /* use on container, where all children will have the same width */
+  .wrapper > * {
+    grid-column: wrapper;
+  }
+
+  /* This will set the children width to xl-wrapper */
+  /* use on container, where all children will have the same width */
+  .xl-wrapper > * {
+    grid-column: xlwrapper;
   }
 }

@@ -1,3 +1,29 @@
 .contact {
-  grid-column: wrapper;
+  display: grid;
+  grid-template-columns: subgrid;
+  justify-items: center;
+  padding-bottom: 0 !important;
+
+  .heading-2,
+  .body,
+  .contact-link-list {
+    grid-column: wrapper;
+  }
+
+  p.disclaimer {
+    font-size: 16px;
+  }
+
+  &.with-bg::before {
+    inset: 0 0 calc((-1) * var(--section-padding)) 0;
+    clip-path: polygon(
+      0% var(--section-padding),
+      100% 0%,
+      100% 100%,
+      0% 100%
+    ) !important;
+  }
+
+  .contact-link {
+  }
 }

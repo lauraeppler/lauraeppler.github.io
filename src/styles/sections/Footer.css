@@ -1,14 +1,24 @@
 .footer {
-  grid-column: wrapper;
-  padding: 1.333rem 1.778rem;
-  background: rgba(255, 255, 255, 0.96);
-  border-top: 1px solid rgba(120, 127, 182, 0.12);
+  display: grid;
+  grid-column: fullwidth;
+  grid-template-columns: subgrid;
+  padding-block: var(--section-padding);
   box-shadow: none;
   text-align: center;
 
-  p {
-    margin: 0;
+  & > p {
+    grid-column: wrapper;
+    margin-block: var(--body-margin-bottom) 0 !important;
     color: #9499b2;
+  }
+
+  &::before {
+    clip-path: polygon(
+      0% calc(var(--section-padding) - 1px),
+      100% 0%,
+      100% 100%,
+      0% 100%
+    ) !important;
   }
 }
 

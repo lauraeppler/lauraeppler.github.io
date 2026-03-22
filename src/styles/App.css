@@ -19,7 +19,6 @@ body,
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -105,5 +104,31 @@ img {
   & > p {
     margin: 0;
     color: inherit;
+  }
+}
+
+.with-bg {
+  position: relative;
+
+  & > p {
+    margin-bottom: var(--body-margin-bottom);
+  }
+
+  &::before {
+    --top-left: 0% var(--section-padding);
+    --top-right: 100% 0%;
+    --bottom-right: 100% calc(100% - var(--section-padding));
+    --bottom-left: 0% 100%;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--light-grey-bg);
+    clip-path: polygon(
+      var(--top-left),
+      var(--top-right),
+      var(--bottom-right),
+      var(--bottom-left)
+    );
+    z-index: -1;
   }
 }

@@ -1,6 +1,5 @@
 .project-list-section {
-  padding: 56px 48px 48px;
-  background: var(--surface);
+  padding-block: var(--section-padding);
 
   h2 {
     margin: 0 0 32px;
