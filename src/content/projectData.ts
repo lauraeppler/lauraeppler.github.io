@@ -30,7 +30,7 @@ const BounceBallData: Project = {
    id: "camture",
    component: Camture,
    title: "Camture",
-   description: "Mobile Foto-Challenge-App zur Entdeckung verborgener Orte",
+   description: "Mobile Foto-Challenge-App zur Entdeckung verborgener Orte.",
    details:
      "Eine Foto-Challenge-App, mit der Nutzende versteckte und außergewöhnliche Orte in einer Stadt spielerisch entdecken können. Sie verbindet urbane Exploration mit Fotografie, Wettbewerb und Community-Interaktion.",
    overview: {
@@ -85,7 +85,7 @@ const FourWaysData: Project = {
   component: FourWays,
   id: "fourways",
   title: "FourWays - Smarthome App",
-  description: "Eine blickbasierte Smarthome-App für Menschen mit Bewegungseinschränkungen",
+  description: "Eine blickbasierte Smarthome-App für Menschen mit Bewegungseinschränkungen.",
   details:
     "Eine blickbasierte Smarthome-App zur Steuerung des Wohnumfelds für Menschen mit motorischen Einschränkungen.",
   overview: {
@@ -103,7 +103,7 @@ const LocalMessengerData: Project = {
   id: "localmessenger",
   component: LocalMessenger,
   title: "Local Messenger",
-  description: "Eine App zur Unterstützungsvermittlung in ambulanten Wohnformen",
+  description: "Eine App zur Unterstützungsvermittlung in ambulanten Wohnformen.",
   details:
     "Eine App zur schnellen und einfachen Kommunikation zwischen Menschen mit Unterstützungsbedarf und Assistierenden der ambulanten Betreuung und Pflege.",
   overview: {
@@ -121,7 +121,7 @@ const ShuffleData: Project = {
   id: "shuffle",
   component: Shuffle,
   title: 'SHUFFLE - Knowledge Badge "Barrierefrei lehren"',
-  description: "Ein Qualifizierungsangebot zur digitalen Barrierefreiheit in der Lehre",
+  description: "Ein Qualifizierungsangebot zur digitalen Barrierefreiheit in der Lehre.",
   details:
     "Ein Weiterbildungsangebot zur digitalen Barrierefreiheit in der Hochschullehre mit öffentlich zugänglichem Onlinekurs und optionaler Qualifizierungsprüfung.",
   overview: {
@@ -140,7 +140,5 @@ export const projectsData: Record<string, Project> = {
   localmessenger: LocalMessengerData,
   fourways: FourWaysData,
   climex: ClimexData,
-  camture: CamtureData,
-  bounceball: BounceBallData,
-  eatmove: EatMoveData,
+  camture: CamtureData
 };

@@ -9,7 +9,7 @@
   & > p {
     grid-column: wrapper;
     margin-block: var(--body-margin-bottom) 0 !important;
-    color: #9499b2;
+    color: #666F8F;
   }
 
   &::before {

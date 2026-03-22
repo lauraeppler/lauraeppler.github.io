@@ -17,7 +17,9 @@ const Header = () => {
             <Link to={{ pathname: HOME, hash: "#contact" }}>Kontakt</Link>
           </li>
           <li className="lebenslauf-link button-primary">
-            <Link to={{ pathname: HOME, hash: "" }}>Lebenslauf (PDF)</Link>
+            <a href="/Lebenslauf.Portfolio.LauraEppler.pdf" download>
+              Lebenslauf (PDF)
+            </a>
           </li>
         </ul>
       </nav>
