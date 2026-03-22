@@ -26,8 +26,9 @@
 
   .contact-link-list {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: calc(var(--body-margin-bottom) + 0.5rem);
+    justify-content: center;
 
     .contact-link {
       flex: 0 0 60px;
