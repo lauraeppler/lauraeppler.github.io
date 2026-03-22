@@ -34,7 +34,9 @@ const Contact = () => (
     </div>
 
     <p className="body disclaimer">
-      <strong>Hinweis:</strong> Hinweis: Dieses Portfolio befindet sich aktuell noch in Entwicklung und ist noch nicht in allen Bereichen vollständig barrierefrei.
+      <strong>Hinweis:</strong> Dieses Portfolio befindet sich aktuell noch in
+      Entwicklung und ist noch nicht in allen Bereichen vollständig
+      barrierefrei.
     </p>
   </section>
 );
