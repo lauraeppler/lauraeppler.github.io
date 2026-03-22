@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 900px) {
   .project-list-section {
     padding: 40px 16px 16px;
 

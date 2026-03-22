@@ -37,7 +37,7 @@ body {
   line-height: var(--h1-line-height);
   margin-block: 0 var(--h1-margin);
 
-  &:first-child() {
+  &:first-child {
     margin-block: var(--h1-margin);
   }
 }

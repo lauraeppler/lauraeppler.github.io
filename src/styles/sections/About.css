@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 900px) {
   #about {
     padding: 40px 24px 120px;
 

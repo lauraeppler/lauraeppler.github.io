@@ -65,7 +65,7 @@
   }
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 900px) {
   .project-thumbnail {
     padding: 16px;
     border-radius: 16px;

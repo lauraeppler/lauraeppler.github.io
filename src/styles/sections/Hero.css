@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 900px) {
   .hero-section {
     padding: 3em 0 0;
     min-height: auto;
