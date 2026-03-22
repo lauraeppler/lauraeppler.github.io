@@ -80,6 +80,12 @@ img {
   }
 }
 
+figcaption {
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
 .button-primary {
   display: inline-flex;
   align-items: center;
