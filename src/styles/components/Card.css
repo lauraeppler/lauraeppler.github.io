@@ -5,7 +5,7 @@ li.card {
   position: relative; /* Essential! This contains the absolute link */
   display: flex;
   align-items: center;
-  column-gap: 1em;
+  column-gap: 0.6em;
   text-align: center;
 
   &:has(div.img-wrapper) {
@@ -25,13 +25,21 @@ li.card {
   .card-content {
     flex: 1 1 100%;
 
+    .main-card-link {
+      color: var(--primary-dark);
+      font-weight: bold;
+      text-decoration: none;
+      word-break: normal;
+    }
+
     & p {
       margin: 0;
+      color: inherit;
       line-height: 1.6;
     }
   }
 
   & > .img-wrapper {
-    flex: 0 1 60px;
+    flex: 1 0 35px;
   }
 }
