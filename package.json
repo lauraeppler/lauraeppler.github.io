@@ -26,7 +26,7 @@
     "vite": "^8.0.0"
   },
   "scripts": {
-    "start": "vite",
+    "start": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --fix src",
