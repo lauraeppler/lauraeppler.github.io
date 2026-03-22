@@ -3,20 +3,24 @@
   display: grid;
   align-content: center;
   position: relative;
-  height: 50dvh;
-  background: var(--light-grey-bg);
+  height: clamp(27rem, 40dvw, 40rem);
   overflow: hidden;
   padding-top: 0;
 
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5dvh;
-    height: 110px;
-    background: var(--surface);
-    clip-path: polygon(0 62%, 100% 0%, 100% 100%, 0 100%);
+    inset: 0;
+    /* bottom: -5dvh; */
+    /* height: 110px; */
+    background: var(--light-grey-bg);
+    clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% calc(100% - var(--section-padding)),
+      0 100%
+    );
+    z-index: -1;
   }
 
   h1 {
@@ -40,11 +44,10 @@
 
 @media (max-width: 900px) {
   #about {
-    padding: 40px 24px 120px;
+    padding-block: 3rem 4rem;
 
-    &::after {
-      height: 76px;
+    /* &::after {
       clip-path: polygon(0 68%, 100% 34%, 100% 100%, 0 100%);
-    }
+    */
   }
 }
