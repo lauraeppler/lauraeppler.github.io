@@ -2,8 +2,8 @@
 :root {
   --h1-margin: clamp(1rem, 3dvw, 1.591rem);
   --h2-margin: clamp(1rem, 2dvw, 2.045rem);
-  --h3-margin: clamp(0.8rem, 1.6dvw, 1.818rem);
-  --h4-margin: clamp(0.8rem, 1.6dvw, 1.545rem);
+  --h3-margin: clamp(16px, 1.6dvw, 1.818rem);
+  --h4-margin: clamp(16px, 1.6dvw, 1.545rem);
   --body-margin-bottom: clamp(1.5rem, 3dvw, 2.591rem);
   --list-margin-bottom: clamp(2.2rem, 1.6dvw, 3rem);
   --section-padding: clamp(1rem, 4dvw, 3.545rem);

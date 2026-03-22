@@ -4,17 +4,19 @@ interface SectionProps {
   key: string;
   id: string;
   title: string;
+  className?: string;
+  wrapperSize: "normal" | "xl";
   background?: boolean;
   children: React.ReactNode;
-  wrapperSize: "normal" | "xl";
 }
 
 const Section = ({
   id,
   title,
-  children,
+  className = "",
   wrapperSize = "normal",
   background = false,
+  children,
 }: SectionProps) => {
   const wrapperClass = wrapperSize === "xl" ? "xl-wrapper" : "wrapper";
   const backgroundClass = background ? "with-bg" : "";
@@ -22,7 +24,7 @@ const Section = ({
   return (
     <section
       id={id}
-      className={`section-container ${wrapperClass} ${backgroundClass}`}
+      className={`section-container ${className} ${wrapperClass} ${backgroundClass}`}
     >
       <h2 className="heading-2">{title}</h2>
       {children}

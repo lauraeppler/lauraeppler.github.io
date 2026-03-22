@@ -18,6 +18,10 @@
   &.with-bg {
     position: relative;
 
+    & > p {
+      margin-bottom: var(--body-margin-bottom);
+    }
+
     &::before {
       --top-left: 0% var(--section-padding);
       --top-right: 100% 0%;

@@ -1,3 +1,7 @@
 #localmessenger {
   /* Page specific stylings */
+
+  .vorgehen > .list {
+    margin-inline: auto;
+  }
 }
