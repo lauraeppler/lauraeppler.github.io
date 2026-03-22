@@ -15,7 +15,7 @@ const Contact = () => (
         id="contact-mail"
         className="contact-link"
       >
-        Mail
+        <img src="/icons/mail.svg" alt="E-Mail" className="contact-icon" />
       </a>
       <a
         href="https://www.linkedin.com/in/laura-eppler-6b89561b1"
@@ -23,8 +23,13 @@ const Contact = () => (
         rel="noopener noreferrer"
         id="contact-linkedin"
         className="contact-link"
+        title="Icons made by Smashicons from www.flaticon.com"
       >
-        LinkedIn
+        <img
+          src="/icons/linkedin.png"
+          alt="LinkedIn"
+          className="contact-icon"
+        />
       </a>
     </div>
 
@@ -32,6 +37,7 @@ const Contact = () => (
       <strong>Hinweis:</strong> Dieses Portfolio befindet sich aktuell im
       Entwicklungsstand und ist noch nicht vollständig barrierefrei.
     </p>
+
   </section>
 );
 
