@@ -96,7 +96,7 @@ p.body:last-child {
       transform: translateY(-50%);
       height: 25px;
       aspect-ratio: 1;
-      left: -2.5em;
+      left: clamp(-2em, 100%, -2.5em);
     }
   }
 }
