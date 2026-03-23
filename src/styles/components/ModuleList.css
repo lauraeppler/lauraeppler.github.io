@@ -1,10 +1,16 @@
 ul.module-list {
   display: grid;
   grid-column: xlwrapper;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   list-style: none;
   gap: 2em;
   width: 100%;
   padding-left: 0;
   margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+  ul.module-list {
+    grid-template-columns: 1fr;
+  }
 }
