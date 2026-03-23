@@ -6,7 +6,7 @@
   --h4-margin: clamp(16px, 1.6dvw, 1.545rem);
   --body-margin-bottom: clamp(1.5rem, 3dvw, 2.591rem);
   --list-margin-bottom: clamp(2.2rem, 1.6dvw, 3rem);
-  --section-padding: clamp(2rem, 4dvw, 3.545rem);
+  --section-padding: clamp(2rem, 6dvw, 6.545rem);
 
   --breakpoint: 900px;
 }
