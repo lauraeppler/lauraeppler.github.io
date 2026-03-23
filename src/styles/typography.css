@@ -72,7 +72,7 @@ body {
 }
 
 .list {
-  padding-left: 3rem;
+  padding-left: 3em;
   margin-block: 0 var(--list-margin-bottom);
   display: grid;
   list-style: none;
@@ -92,7 +92,7 @@ body {
       transform: translateY(-50%);
       height: 25px;
       aspect-ratio: 1;
-      left: clamp(-2em, 100%, -2.5em);
+      left: -2.5em;
     }
   }
 }
