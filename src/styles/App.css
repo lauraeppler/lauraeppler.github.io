@@ -83,6 +83,7 @@ img {
 .img-screenshot img {
   height: 75dvh;
   width: auto;
+  object-fit: cover;
 }
 
 
